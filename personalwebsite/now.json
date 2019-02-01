@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "name": "shane-schmaltz-personal-site",
+  "alias": "shane-schmaltz",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    }
+  ]
+}
