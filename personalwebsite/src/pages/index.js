@@ -4,24 +4,22 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Image from '../components/image'
 import SEO from '../components/seo'
+const seoKeyWords = [
+  `gatsby`,
+  `application`,
+  `react`,
+  `Shane Schmaltz`,
+  `Shane`,
+  `Schmaltz`,
+  `Calgary`,
+  `Software Developer`,
+  `Software`,
+  `Developer`,
+]
 
 const IndexPage = () => (
   <Layout>
-    <SEO
-      title="Home"
-      keywords={[
-        `gatsby`,
-        `application`,
-        `react`,
-        `Shane Schmaltz`,
-        `Shane`,
-        `Schmaltz`,
-        `Calgary`,
-        `Software Developer`,
-        `Software`,
-        `Developer`,
-      ]}
-    />
+    <SEO title="Home" keywords={seoKeyWords} />
     <h1>Shane Schmaltz</h1>
     <p>Software Developer</p>
     <p>Creating good first impressions on the web</p>
