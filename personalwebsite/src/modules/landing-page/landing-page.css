@@ -1,4 +1,5 @@
 .landing-page_container {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,17 +7,50 @@
 }
 
 .landing-page_full-name {
-  margin: 3rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.15rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   font-size: 3rem;
 }
 
 .landing-page_title {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
   margin: 1rem;
   margin-bottom: 1.5rem;
   font-size: 4.5rem;
 }
 
 .landing-page_tagline {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   margin: 1rem;
   font-size: 1.4rem;
 }
+
+/* .typewriter h1 {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: transparent;
+  }
+} */
