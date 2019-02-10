@@ -1,0 +1,22 @@
+.landing-page_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.landing-page_full-name {
+  margin: 3rem;
+  font-size: 3rem;
+}
+
+.landing-page_title {
+  margin: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 4.5rem;
+}
+
+.landing-page_tagline {
+  margin: 1rem;
+  font-size: 1.4rem;
+}

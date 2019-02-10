@@ -20,9 +20,7 @@ const Nav = props => {
           </li>
           <div className="nav-bar__logo">
             <Link to="/">
-              <div className="nav-bar__logo-inner">
-                {/* <h4 className="nav-bar__logo-text">Home</h4> */}
-              </div>
+              <div className="nav-bar__logo-inner" />
             </Link>
           </div>
           <li className="nav-bar__link-item">

@@ -25,7 +25,16 @@ const Layout = ({ children }) => (
         >
           <Nav />
           {children}
-          <footer>© {new Date().getFullYear()} Shane Schmaltz</footer>
+          <footer
+            style={{
+              position: 'absolute',
+              bottom: 0,
+              left: '45%',
+              marginBottom: '2rem',
+            }}
+          >
+            © {new Date().getFullYear()} Shane Schmaltz
+          </footer>
         </div>
       </>
     )}
