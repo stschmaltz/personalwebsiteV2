@@ -1,8 +1,42 @@
 .mobile-nav-nar__main-container {
-  height: 50px;
+  height: 3rem;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   position: fixed;
-  top: 0;
+  bottom: 0;
   color: #ddd;
   background-color: rgba(20, 20, 20, 0.8);
+}
+
+.mobile-nav-bar__nav-item-container {
+  /* max-width: 20%; */
+}
+
+.mobile-nav-bar__nav-item-link a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 0.6rem;
+}
+
+.mobile-nav-bar__nav-item-text {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 0.6rem;
+}
+.mobile-nav-bar__nav-item-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 20vw;
+  width: 20vw;
+  align-items: center;
+}
+.mobile-nav-bar__nav-item-icon {
+  margin: 2px;
+  height: 1.8rem;
+  width: 100%;
+  max-width: 38px;
+  background-color: white;
+  border: 2px solid rebeccapurple;
 }
