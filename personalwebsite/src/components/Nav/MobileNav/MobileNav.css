@@ -1,0 +1,8 @@
+.mobile-nav-nar__main-container {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  color: #ddd;
+  background-color: rgba(20, 20, 20, 0.8);
+}

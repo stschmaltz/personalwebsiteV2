@@ -20,6 +20,7 @@
     "react-dom": "^16.8.1",
     "react-helmet": "^5.2.0",
     "react-particles-js": "^2.4.2",
+    "react-sizeme": "^2.5.2",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18",
     "typography-theme-funston": "^0.16.18",

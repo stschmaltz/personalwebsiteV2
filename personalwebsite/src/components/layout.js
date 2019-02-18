@@ -18,11 +18,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <div
-          style={{
-            padding: '5rem',
-          }}
-        >
+        <div>
           <Nav />
           {children}
           <footer
