@@ -8,23 +8,18 @@
   position: fixed;
   bottom: 0;
   color: #ddd;
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(13, 90, 120, 0.5);
 }
 
 .mobile-nav-bar__nav-item-container {
   /* max-width: 20%; */
 }
 
-.mobile-nav-bar__nav-item-link a {
-  color: #ddd;
-  text-decoration: none;
-  font-size: 0.6rem;
-}
-
 .mobile-nav-bar__nav-item-text {
   color: #ddd;
   text-decoration: none;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 .mobile-nav-bar__nav-item-outer-container {
   height: 100%;
@@ -46,7 +41,6 @@
   height: 1.8rem;
   width: 100%;
   max-width: 38px;
-  background-color: white;
   border-radius: 10px;
-  border: 2px solid rebeccapurple;
+  color: whitesmoke;
 }
