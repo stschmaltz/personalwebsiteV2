@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
               position: 'absolute',
               bottom: 0,
               left: '45%',
-              marginBottom: '3rem',
+              marginBottom: '5rem',
             }}
           >
             © {new Date().getFullYear()} Shane Schmaltz
