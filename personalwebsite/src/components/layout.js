@@ -29,7 +29,7 @@ const Layout = ({ children }) => (
               marginBottom: '5rem',
             }}
           >
-            © {new Date().getFullYear()} Shane Schmaltz
+            {/* © {new Date().getFullYear()} Shane Schmaltz */}
           </footer>
         </div>
       </>

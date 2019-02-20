@@ -26,7 +26,7 @@ const LandingPage = props => {
         <h1 className="landing-page_full-name">Shane Schmaltz</h1>
         <h2 className="landing-page_title">Software Developer</h2>
         <p className="landing-page_tagline">
-          Focused on creating websites that leave a lasting impression
+          Creating websites with a lasting impression
         </p>
       </div>
     </Layout>
