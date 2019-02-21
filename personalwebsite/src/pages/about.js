@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../components/layout'
+import withParticleBackground from '../modules/particle-background/withParticleBackground'
 
-const about = props => {
+const AboutPage = props => {
   return <Layout>About</Layout>
 }
 
-about.propTypes = {}
+AboutPage.propTypes = {}
 
-export default about
+export default withParticleBackground(AboutPage)

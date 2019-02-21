@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Layout from '../components/layout'
+import withParticleBackground from '../modules/particle-background/withParticleBackground'
 
-const portfolio = props => {
+const PortfolioPage = props => {
   return <Layout>Portfolio</Layout>
 }
 
-portfolio.propTypes = {}
+PortfolioPage.propTypes = {}
 
-export default portfolio
+export default withParticleBackground(PortfolioPage)

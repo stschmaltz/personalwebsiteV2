@@ -21,16 +21,6 @@ const Layout = ({ children }) => (
         <div>
           <Nav />
           {children}
-          <footer
-            style={{
-              position: 'absolute',
-              bottom: 0,
-              left: '45%',
-              marginBottom: '5rem',
-            }}
-          >
-            {/* © {new Date().getFullYear()} Shane Schmaltz */}
-          </footer>
         </div>
       </>
     )}

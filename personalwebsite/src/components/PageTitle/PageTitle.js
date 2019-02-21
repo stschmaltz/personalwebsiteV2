@@ -11,8 +11,8 @@ const PageTitle = ({ title }) => {
       </div>
       <div className="page-title__content">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-          viverra mauris ut ligula lobortis, quis interdum sapien elementum.
+          Feel free to contact me via the form or send me a message at any of
+          these links
         </p>
       </div>
     </div>

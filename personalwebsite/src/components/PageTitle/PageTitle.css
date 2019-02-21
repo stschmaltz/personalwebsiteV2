@@ -1,7 +1,13 @@
 .page-title__main-container {
+  max-width: 17rem;
   width: 17rem;
 }
-
+@media (max-width: 600px) {
+  .page-title__main-container {
+    width: 100%;
+    margin: auto;
+  }
+}
 .page-title__content {
 }
 
