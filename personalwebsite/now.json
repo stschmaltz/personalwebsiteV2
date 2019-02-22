@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "name": "shane-schmaltz-personal-site",
-  "alias": "shane-schmaltz",
+  "name": "shane-schmaltz-personal-site-2",
+  "alias": "shaneschmaltz",
   "builds": [
     {
       "src": "package.json",

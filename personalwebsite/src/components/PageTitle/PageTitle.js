@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './PageTitle.css'
+import SocialLink from '../../modules/contact-page/components/SocialLink'
 
 const PageTitle = ({ title }) => {
   return (
@@ -14,6 +15,13 @@ const PageTitle = ({ title }) => {
           Feel free to contact me via the form or send me a message at any of
           these links
         </p>
+        <div>
+          <ul>
+            <SocialLink />
+            <SocialLink />
+            <SocialLink />
+          </ul>
+        </div>
       </div>
     </div>
   )

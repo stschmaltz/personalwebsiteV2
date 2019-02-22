@@ -1,6 +1,6 @@
 import React from 'react'
 
-import LandingPage from '../modules/landing-page/landing-page'
+import LandingPage from '../modules/landing-page/LandingPage'
 
 const IndexPage = () => <LandingPage />
 
