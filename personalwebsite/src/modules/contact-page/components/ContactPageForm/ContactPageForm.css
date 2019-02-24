@@ -1,8 +1,9 @@
 .contact-page-form_container {
   width: 25rem;
   height: 25rem;
-  background-color: #aa3bdb;
-  padding: 1rem;
+  background-color: rgba(230, 230, 230, 0.8);
+  padding-left: 1rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -15,23 +16,69 @@
   }
 }
 
+.contact-page-form_name-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.contact-page-form_name-label {
+  font-size: 0.8rem;
+  text-align: right;
+  flex-basis: 2rem;
+  margin: 0.2rem 0.5rem;
+}
+
 .contact-page-form_name-input {
+  padding: 0 0.5rem;
+
+  border-radius: 10px;
+
   height: 3rem;
   width: 20rem;
-  background-color: #3540c4;
+  background-color: rgb(60, 60, 60, 0.2);
   margin: 0.5rem;
+}
+
+.contact-page-form_email-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.contact-page-form_email-label {
+  font-size: 0.8rem;
+  text-align: right;
+  flex-basis: 2rem;
+  margin: 0.2rem 0.5rem;
 }
 .contact-page-form_email-input {
+  padding: 0 0.5rem;
+
   height: 3rem;
   width: 20rem;
-  background-color: #3540c4;
+  border-radius: 10px;
+  background-color: rgb(60, 60, 60, 0.2);
   margin: 0.5rem;
 }
+
+.contact-page-form_message-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.contact-page-form_message-label {
+  font-size: 0.8rem;
+  text-align: right;
+  flex-basis: 2rem;
+  margin: 0.2rem 0.5rem;
+}
 .contact-page-form_message-input {
+  /* font-size: 0.8rem; */
+  padding: 0 0.5rem;
+  border-radius: 10px;
   margin: 0.5rem;
-  height: 10rem;
+  height: 12rem;
   width: 20rem;
-  background-color: #3540c4;
+  background-color: rgb(60, 60, 60, 0.2);
 }
 
 .contact-page-form_button {
@@ -42,7 +89,7 @@
   align-self: flex-end;
   border: 0;
   border-radius: 0.25rem;
-  background: #3540c4;
+  background: #d12038;
   color: white;
   font-family: system-ui, sans-serif;
   font-size: 1rem;

@@ -7,8 +7,8 @@
 .social-link__icon {
   height: 3rem;
   width: 3rem;
-  background-color: #d12038;
-  border-radius: 25px;
+  /* background-color: #d12038; */
+  /* border-radius: 25px; */
   display: flex;
   justify-content: center;
   align-items: center;
