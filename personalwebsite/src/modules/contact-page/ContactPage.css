@@ -4,8 +4,8 @@
   justify-content: space-between;
   width: 90%;
   max-width: 900px;
-  margin: 7rem auto;
-  background-color: rgb(200, 200, 200);
+  margin: 5rem auto;
+  background-color: rgb(230, 230, 230, 0.8);
   box-sizing: content-box;
   padding: 1.5rem;
 }

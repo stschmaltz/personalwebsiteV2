@@ -1,7 +1,7 @@
 .contact-page-form_container {
-  width: 30rem;
+  width: 25rem;
   height: 25rem;
-  background-color: #b03ad4;
+  background-color: #aa3bdb;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -18,20 +18,20 @@
 .contact-page-form_name-input {
   height: 3rem;
   width: 20rem;
-  background-color: #404eeb;
+  background-color: #3540c4;
   margin: 0.5rem;
 }
 .contact-page-form_email-input {
   height: 3rem;
   width: 20rem;
-  background-color: #404eeb;
+  background-color: #3540c4;
   margin: 0.5rem;
 }
 .contact-page-form_message-input {
   margin: 0.5rem;
   height: 10rem;
   width: 20rem;
-  background-color: #404eeb;
+  background-color: #3540c4;
 }
 
 .contact-page-form_button {
@@ -42,7 +42,7 @@
   align-self: flex-end;
   border: 0;
   border-radius: 0.25rem;
-  background: #404eeb;
+  background: #3540c4;
   color: white;
   font-family: system-ui, sans-serif;
   font-size: 1rem;

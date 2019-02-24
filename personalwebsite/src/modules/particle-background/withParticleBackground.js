@@ -1,8 +1,7 @@
 import React from 'react'
 import Particles from 'react-particles-js'
 import particleParams from './particle-params.json'
-
-const colours = ['#F64B43', '#B03AD4', '#404EEB', '#2FC4D4', '#4AE86C']
+import { colours } from '../../utils/colours'
 
 export const withParticleBackground = WrappedComponent => props => {
   const params = {
