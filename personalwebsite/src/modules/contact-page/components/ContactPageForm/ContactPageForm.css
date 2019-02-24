@@ -1,0 +1,53 @@
+.contact-page-form_container {
+  width: 30rem;
+  height: 25rem;
+  background-color: #b03ad4;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+@media (max-width: 600px) {
+  .contact-page-form_container {
+    height: 400px;
+    width: 100%;
+  }
+}
+
+.contact-page-form_name-input {
+  height: 3rem;
+  width: 20rem;
+  background-color: #404eeb;
+  margin: 0.5rem;
+}
+.contact-page-form_email-input {
+  height: 3rem;
+  width: 20rem;
+  background-color: #404eeb;
+  margin: 0.5rem;
+}
+.contact-page-form_message-input {
+  margin: 0.5rem;
+  height: 10rem;
+  width: 20rem;
+  background-color: #404eeb;
+}
+
+.contact-page-form_button {
+  margin: 0.5rem;
+  width: 5rem;
+  height: 2rem;
+  text-align: center;
+  align-self: flex-end;
+  border: 0;
+  border-radius: 0.25rem;
+  background: #404eeb;
+  color: white;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}

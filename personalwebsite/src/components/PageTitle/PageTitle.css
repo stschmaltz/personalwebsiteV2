@@ -1,6 +1,6 @@
 .page-title__main-container {
-  max-width: 17rem;
-  width: 17rem;
+  max-width: 14rem;
+  width: 14rem;
 }
 @media (max-width: 600px) {
   .page-title__main-container {
@@ -16,24 +16,6 @@
 
 .page-title__above-bar {
   height: 3px;
-  background-color: #8a1675;
+  background-color: #f64b43;
   width: 100%;
-}
-
-.social-link__container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.social-link__icon {
-  height: 3rem;
-  width: 3rem;
-  background-color: #8a1675;
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.social-link__text {
 }
