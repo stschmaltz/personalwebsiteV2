@@ -7,9 +7,13 @@ import twinPeaksTheme from 'typography-theme-twin-peaks'
 stowLakeTheme.overrideThemeStyles = ({ rhythm }, options) => ({
   'h1,h2,h3,h4,h5': {
     marginTop: rhythm(0),
+    marginBottom: rhythm(0),
   },
   ul: {
     margin: rhythm(0),
+  },
+  p: {
+    marginBottom: rhythm(0),
   },
 })
 

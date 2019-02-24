@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './ContactPageForm.css'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
+import ContactPageFormInput from './ContactPageFormInput'
 
 const ContactPageForm = props => {
   return (
@@ -28,33 +29,37 @@ const ContactPageForm = props => {
       >
         {({ isSubmitting }) => (
           <Form className="contact-page-form_container">
-            <div className="contact-page-form_name-container">
-              <span className="contact-page-form_name-label">Name:</span>
-              <Field
-                className="contact-page-form_name-input"
-                type="text"
-                name="name"
-              />
-            </div>
-            <div className="contact-page-form_email-container">
-              <span className="contact-page-form_email-label">Email:</span>
-              <Field
-                className="contact-page-form_email-input"
-                type="email"
-                name="email"
-              />
-            </div>
-            <div className="contact-page-form_message-container">
-              <span className="contact-page-form_message-label">Message:</span>
-
-              <Field
-                component="textarea"
-                className="contact-page-form_message-input"
-                type="text"
-                name="message"
-              />
-            </div>
-
+            <ContactPageFormInput
+              InputComponent={
+                <Field
+                  className="contact-page-form_name-input"
+                  type="text"
+                  name="name"
+                />
+              }
+              label="Name"
+            />
+            <ContactPageFormInput
+              InputComponent={
+                <Field
+                  className="contact-page-form_email-input"
+                  type="email"
+                  name="email"
+                />
+              }
+              label="Email"
+            />
+            <ContactPageFormInput
+              InputComponent={
+                <Field
+                  component="textarea"
+                  className="contact-page-form_message-input"
+                  type="text"
+                  name="message"
+                />
+              }
+              label="Message"
+            />
             <button
               className="contact-page-form_button"
               type="submit"

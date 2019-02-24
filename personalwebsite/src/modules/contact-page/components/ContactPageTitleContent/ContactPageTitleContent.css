@@ -1,0 +1,9 @@
+.page-title__paragraph {
+  margin: 1rem 0;
+  margin-bottom: 2rem;
+}
+@media (max-width: 600px) {
+  .page-title__paragraph {
+    margin: 0.5rem auto;
+  }
+}

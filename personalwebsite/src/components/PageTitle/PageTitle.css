@@ -4,14 +4,28 @@
 }
 @media (max-width: 600px) {
   .page-title__main-container {
-    width: 100%;
+    max-width: 100%;
+    width: 90%;
     margin: auto;
   }
 }
-.page-title__content {
-}
 
 .page-title__header {
+  margin: 1rem 0;
+}
+@media (max-width: 600px) {
+  .page-title__header {
+    margin: 0.5rem auto;
+  }
+}
+
+.page-title__content {
+  margin: 1rem 0;
+}
+@media (max-width: 600px) {
+  .page-title__content {
+    margin: 0.5rem auto;
+  }
 }
 
 .page-title__above-bar {

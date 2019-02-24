@@ -7,11 +7,15 @@
 .social-link__icon {
   height: 3rem;
   width: 3rem;
-  /* background-color: #d12038; */
-  /* border-radius: 25px; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .social-link__text {
+}
+@media (max-width: 600px) {
+  .social-link__icon {
+    height: 2rem;
+    width: 2rem;
+  }
 }

@@ -8,11 +8,14 @@ import {
   FaGithubSquare,
   FaMailBulk,
 } from 'react-icons/fa'
+import './ContactPageTitleContent.css'
 
 const ContentPageTitleContent = props => {
   return (
     <div className="page-title__content">
-      <p>Feel free to contact me via the form or use any of the links below</p>
+      <p className="page-title__paragraph">
+        Feel free to contact me via the form or use any of the links below
+      </p>
       <div>
         <ul>
           <SocialLink Icon={FaEnvelopeSquare} link="stschmaltz@gmail.com" />
