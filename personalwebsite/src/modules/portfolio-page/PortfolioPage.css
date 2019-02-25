@@ -1,0 +1,25 @@
+.portfolio-page_content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 5rem;
+  border-radius: 20px;
+
+  background-color: rgb(230, 230, 230, 0.8);
+  box-sizing: content-box;
+  padding: 1.5rem;
+  padding-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .portfolio-page_content-container {
+    margin-top: 0;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 0;
+    box-sizing: border-box;
+  }
+}
