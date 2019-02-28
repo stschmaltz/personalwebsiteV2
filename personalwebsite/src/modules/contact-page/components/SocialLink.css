@@ -12,6 +12,7 @@
   align-items: center;
 }
 .social-link__text {
+  padding-left: 0.5rem;
 }
 @media (max-width: 600px) {
   .social-link__icon {

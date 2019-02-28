@@ -8,7 +8,7 @@ const SocialLink = ({ Icon, link }) => {
       <div className="social-link__icon">
         <Icon className="social-link__icon" />
       </div>
-      <span className="social-link__text">: {link}</span>
+      <span className="social-link__text">{link}</span>
     </div>
   )
 }
