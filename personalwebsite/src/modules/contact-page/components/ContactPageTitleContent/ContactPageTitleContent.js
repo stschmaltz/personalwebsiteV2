@@ -14,7 +14,7 @@ const ContentPageTitleContent = props => {
   return (
     <div className="page-title__content">
       <p className="page-title__paragraph">
-        Feel free to contact me via the form or use any of the links below
+        If you like what you see please contact me via the form or use any of the links below
       </p>
       <div>
         <ul>
