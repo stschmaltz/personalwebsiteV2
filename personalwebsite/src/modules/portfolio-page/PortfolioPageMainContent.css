@@ -1,0 +1,15 @@
+.portfolio-page-main-content__outer-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	max-width: 900px;
+	margin-left: 2rem;
+	justify-content: space-around;
+}
+
+.portfolio-page-main-content__portfolio-item {
+	margin-bottom: 1rem;
+	width: 250px;
+	height: 250px;
+	background-color: lightcyan;
+}

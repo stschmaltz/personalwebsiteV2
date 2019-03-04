@@ -1,18 +1,16 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import './PortfolioPage.css'
-import PageTitle from '../../components/PageTitle/PageTitle'
-import PortfolioPageContent from './PortfolioPageContent'
+import React from 'react';
+import './PortfolioPage.css';
+import PageTitle from '../../components/PageTitle/PageTitle';
+import PortfolioPageTitleContent from './PortfolioPageTitleContent';
+import PortfolioPageMainContent from './PortfolioPageMainContent';
 
-const PortfolioPage = props => {
-  return (
-    <div className="portfolio-page_content-container">
-      <PageTitle title="Portfolio" ContentComponent={PortfolioPageContent} />
-      <span>abc123</span>
-    </div>
-  )
-}
+const PortfolioPage = () => {
+	return (
+		<div className="portfolio-page_content-container">
+			<PageTitle title="Portfolio" ContentComponent={PortfolioPageTitleContent} />
+			<PortfolioPageMainContent />
+		</div>
+	);
+};
 
-PortfolioPage.propTypes = {}
-
-export default PortfolioPage
+export default PortfolioPage;

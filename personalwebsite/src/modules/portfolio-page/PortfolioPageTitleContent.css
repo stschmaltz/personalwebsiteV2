@@ -1,0 +1,14 @@
+.portfolio-page-content_github-button {
+	margin: 0.2rem;
+	/* width: 5rem; */
+	height: 2rem;
+	font-weight: bold;
+	padding: 0;
+	/* font-size: 0.8rem; */
+	text-align: center;
+	align-self: flex-end;
+	border: 0;
+	color: #3540c4;
+	background-color: rgb(230, 230, 230);
+	cursor: pointer;
+}
