@@ -6,7 +6,7 @@ import ContactPageFormInput from './ContactPageFormInput'
 
 const ContactPageForm = props => {
   return (
-    <div>
+    <>
       <Formik
         initialValues={{ email: '', password: '' }}
         validate={values => {
@@ -70,7 +70,7 @@ const ContactPageForm = props => {
           </Form>
         )}
       </Formik>
-    </div>
+    </>
   )
 }
 

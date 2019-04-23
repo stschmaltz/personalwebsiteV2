@@ -18,7 +18,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <div style={{ maxWidth: '900px', margin: 'auto' }}>
+        <div className="main-layout">
           <Nav />
           {children}
         </div>

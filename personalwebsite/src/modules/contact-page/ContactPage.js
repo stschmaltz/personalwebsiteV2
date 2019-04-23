@@ -5,7 +5,7 @@ import './ContactPage.css'
 import ContactPageTitleContent from './components/ContactPageTitleContent/ContactPageTitleContent'
 import ContactPageForm from './components/ContactPageForm/ContactPageForm'
 
-const ContactPage = props => {
+const ContactPage =  props => {
   return (
     <div className="contact-page_content-container">
       <PageTitle title="Contact" ContentComponent={ContactPageTitleContent} />

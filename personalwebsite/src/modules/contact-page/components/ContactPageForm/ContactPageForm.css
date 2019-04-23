@@ -1,9 +1,9 @@
 .contact-page-form_container {
-  width: 25rem;
-  height: 25rem;
-  background-color: rgba(230, 230, 230, 0.8);
+  max-width: 500px;
+  width: 100%;
   padding-left: 1rem;
   margin-top: 1rem;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -21,9 +21,11 @@
 }
 
 .contact-page-form-input_container {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 
 @media (max-width: 600px) {
@@ -35,6 +37,7 @@
   }
   .contact-page-form-input_container span {
     align-self: flex-start;
+    font-weight: bold;
     margin-left: 1rem;
     margin-bottom: 0;
     line-height: 2rem;
@@ -44,7 +47,6 @@
 .contact-page-form-input_label {
   font-size: 0.8rem;
   text-align: right;
-  flex-basis: 2rem;
   margin: 0.2rem 0.5rem;
 }
 
@@ -52,7 +54,8 @@
   padding: 0 0.5rem;
   border-radius: 10px;
   height: 3rem;
-  width: 20rem;
+  width: 100%;
+  max-width: 350px;
   background-color: rgb(60, 60, 60, 0.2);
   margin: 0.5rem;
 }
@@ -60,18 +63,20 @@
 .contact-page-form_email-input {
   padding: 0 0.5rem;
   height: 3rem;
-  width: 20rem;
+  width: 100%;
+  max-width: 350px;
   border-radius: 10px;
   background-color: rgb(60, 60, 60, 0.2);
   margin: 0.5rem;
 }
 
 .contact-page-form_message-input {
+  max-width: 350px;
   padding: 0 0.5rem;
   border-radius: 10px;
   margin: 0.5rem;
   height: 12rem;
-  width: 20rem;
+  width: 100%;
   background-color: rgb(60, 60, 60, 0.2);
 }
 
