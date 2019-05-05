@@ -15,7 +15,7 @@
 }
 
 .landing-page_full-name {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: var(--basic-text-shadow);
   letter-spacing: 0.15rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
@@ -32,7 +32,7 @@
 }
 
 .landing-page_title {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: var(--basic-text-shadow);
   margin: 1rem;
   margin-bottom: 1.5rem;
   font-size: 4.5rem;
@@ -47,7 +47,7 @@
 
 .landing-page_tagline {
   text-align: center;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: var(--basic-text-shadow);
   margin: 1rem;
   font-size: 1.4rem;
 }

@@ -1,6 +1,6 @@
 .page-title__main-container {
   max-width: 22rem;
-  /* width: 26rem; */
+  width: 22rem;
 }
 @media (max-width: 600px) {
   .page-title__main-container {
@@ -30,6 +30,6 @@
 
 .page-title__above-bar {
   height: 3px;
-  background-color: #d12038;
+  background-color: var(--primary-color);
   width: 100%;
 }

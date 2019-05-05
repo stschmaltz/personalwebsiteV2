@@ -9,7 +9,7 @@
   bottom: 0;
   left: 0;
   color: #ddd;
-  background-color: rgba(120, 120, 120, 0.6);
+  background-color: var(--black-300);
 }
 
 .mobile-nav-bar__nav-item-container {
@@ -20,7 +20,7 @@
   color: #ddd;
   text-decoration: none;
   font-size: 0.75rem;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: var(--basic-text-shadow);
 }
 .mobile-nav-bar__nav-item-outer-container {
   height: 100%;

@@ -1,3 +1,61 @@
+:root {
+  --primary-color: #d12038;
+  --primary-color-50: #f9e4e7;
+  --primary-color-100: #f1bcc3;
+  --primary-color-200: #e8909c;
+  --primary-color-300: #df6374;
+  --primary-color-400: #d84156;
+  --primary-color-500: #d12038;
+  --primary-color-600: #cc1c32;
+  --primary-color-700: #c6182b;
+  --primary-color-800: #c01324;
+  --primary-color-900: #b50b17;
+  --primary-color-A100: #ffe1e3;
+  --primary-color-A200: #ffaeb2;
+  --primary-color-A400: #ff7b82;
+  --primary-color-A700: #ff6269;
+
+  --white-full: #fff;
+  --white-standard: #fafafa;
+
+  --black-50: #e5e5e5;
+  --black-100: #bdbebe;
+  --black-200: #929292;
+  --black-300: #666666;
+  --black-400: #454646;
+  --black-500: #242525;
+  --black-600: #202121;
+  --black-700: #1b1b1b;
+  --black-800: #161616;
+  --black-900: #0d0d0d;
+  --black-A100: #eb6969;
+  --black-A200: #e53c3c;
+  --black-A400: #ee0000;
+  --black-A700: #d40000;
+  --black-contrast: #ffffff;
+
+  --grey-50: #f9fafb;
+  --grey-100: #eff2f4;
+  --grey-200: #e5e9ed;
+  --grey-300: #dbe0e6;
+  --grey-400: #d3dae0;
+  --grey-500: #cbd3db;
+  --grey-600: #c6ced7;
+  --grey-700: #bec8d2;
+  --grey-800: #b8c2cd;
+  --grey-900: #acb7c4;
+  --grey-A100: #ffffff;
+  --grey-A200: #ffffff;
+  --grey-A400: #ffffff;
+  --grey-A700: #f6faff;
+  --grey-contrast: #000000;
+  --primary-text: rbga(0, 0, 0, 0.87);
+  --secondary-text: #aeb9c5;
+  --tertiary-text: #d7dce2;
+
+  --basic-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
 html {
   height: 100vh;
   font-family: sans-serif;
@@ -12,6 +70,7 @@ html {
 }
 body {
   margin: 0;
+  color: var(--primary-text);
 }
 .main-layout {
   display: flex;
