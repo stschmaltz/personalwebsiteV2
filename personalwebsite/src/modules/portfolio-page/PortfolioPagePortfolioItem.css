@@ -1,0 +1,24 @@
+.portfolio-page-portfolio_container {
+  height: 100%;
+  width: 100%;
+  background-color: var(--grey-500);
+  color: var(--black-900);
+  font-weight: 700;
+}
+
+.portfolio-page-portfolio_thumbnail {
+  padding: 1rem;
+
+  width: 100%;
+  height: 100%;
+}
+.portfolio-page-portfolio_img {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-page-portfolio_description {
+  padding: 1rem;
+
+  width: 100%;
+  height: 100%;
+}
