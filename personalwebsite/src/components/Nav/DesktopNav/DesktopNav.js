@@ -4,9 +4,12 @@ import { Link } from 'gatsby'
 import './DesktopNav.css'
 import DesktopNavItem from './DesktopNavItem'
 
-const DesktopNav = props => {
+const DesktopNav = ({ location }) => {
+  const isHome = location.pathname === '/' ? 'isHome   ' : ''
+  const containerClass = isHome + 'desktop-nav-bar__main-container'
+  console.log('locationlocation', location)
   return (
-    <div className="desktop-nav-bar__main-container">
+    <div className={containerClass}>
       <nav className="desktop-nav-bar__navigation">
         <ul className="desktop-nav-bar__navigation-list">
           <DesktopNavItem title="About" path="/about/" />

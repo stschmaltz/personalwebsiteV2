@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Nav from './Nav/Nav'
 import Header from './header'
 import './layout.css'
+import { Location } from '@reach/router'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -16,14 +17,21 @@ const Layout = ({ children }) => (
         }
       }
     `}
-    render={data => (
-      <>
-        <div className="main-layout">
-          <Nav />
-          {children}
-        </div>
-      </>
-    )}
+    render={data => {
+      console.log('zzz', data)
+      return (
+        <>
+          <Location>
+            {locationProps => (
+              <div className="main-layout">
+                <Nav {...locationProps} />
+                {children}
+              </div>
+            )}
+          </Location>
+        </>
+      )
+    }}
   />
 )
 
