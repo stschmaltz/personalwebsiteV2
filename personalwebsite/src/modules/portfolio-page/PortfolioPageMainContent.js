@@ -11,18 +11,24 @@ const PortfolioPageMainContent = props => {
     <div className="portfolio-page-main-content__outer-container">
       <div className="portfolio-page-main-content__portfolio-item">
         <PortfolioPagePortfolioItem
+          siteName="Spotify Dashboard"
+          siteUrl="https://spotifydashboard.com"
           description="ReactJS site I made to experiment with Spotify Api. I learned how to do authentication and create an express JS server. As well as practice interacting with an api in ReactJS (used redux)"
           children={<SpotifyDashboardThumbnail />}
         />
       </div>
       <div className="portfolio-page-main-content__portfolio-item">
         <PortfolioPagePortfolioItem
+          siteName="Personal Site V1"
+          siteUrl="https://shaneschmaltz.com"
           description="The first ReactJS site I made and also the original version of my personal website."
           children={<PersonalSiteV1Thumbnail />}
         />
       </div>
       <div className="portfolio-page-main-content__portfolio-item">
         <PortfolioPagePortfolioItem
+          siteName="Marketing Demo Site"
+          siteUrl="https://marketing-demo-site.now.sh"
           description="Another ReactJS site, this time it's a server side rendered website built with Gatsby. This was to practice some interesting marketing website techniques."
           children={<MarketingDemoSiteThumbnail />}
         />

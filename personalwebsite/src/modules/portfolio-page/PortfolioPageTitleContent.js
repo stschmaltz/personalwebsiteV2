@@ -10,9 +10,12 @@ const PortfolioPageTitleContent = props => {
         created start to finish by myself. All of the sites are mobile and
         desktop friendly. The code for each is publicly available at my github.
       </span>
-      <button className="portfolio-page-content_github-button">
+      <a
+        href="https://github.com/stschmaltz"
+        className="portfolio-page-content_github-button"
+      >
         Available Here
-      </button>
+      </a>
     </div>
   )
 }
