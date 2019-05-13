@@ -1,6 +1,19 @@
 import React, { Component } from 'react'
 import { Document, Page } from 'react-pdf'
 import resumeFile from '../../images/Shane-Schmaltz-Resume.pdf'
+import './ResumePage.css'
+import sizeMe from 'react-sizeme'
+import PageTitle from '../../components/PageTitle/PageTitle'
+
+const DownloadButton = () => (
+  <div className="resume-page_title-container">
+    <span className="resume-page_title-description">
+      Below is my resume. It details my work experience and my familiarity with
+      different technologies and programming langauges.
+    </span>
+    <button className="resume-page_download-button">Click to Download</button>
+  </div>
+)
 
 class ResumePage extends Component {
   state = {
@@ -19,19 +32,36 @@ class ResumePage extends Component {
   }
 
   render() {
+    const { size } = this.props
+    const { width } = size
+
     const { file, numPages } = this.state
 
+    const resumeWidth = Math.min(width - 85, 1000)
+    const realResumeWidth = Math.max(resumeWidth, 600)
     return (
-      <div className="Example">
-        <div className="Example__container">
-          <div className="Example__container__document">
-            <Document file={file} onLoadSuccess={this.onDocumentLoadSuccess}>
-              {Array.from(new Array(numPages), (el, index) => (
-                <Page key={`page_${index + 1}`} pageNumber={index + 1} />
-              ))}
-            </Document>
-          </div>
-        </div>
+      <div className="resume-page_main-container">
+        <PageTitle
+          className="resume-page_page-title"
+          title="Resume"
+          ContentComponent={DownloadButton}
+        />
+
+        <Document
+          renderMode="svg"
+          className="resume-page_resume-document"
+          file={file}
+          onLoadSuccess={this.onDocumentLoadSuccess}
+        >
+          {Array.from(new Array(numPages), (el, index) => (
+            <Page
+              width={realResumeWidth}
+              className="resume-page_resume-page"
+              key={`page_${index + 1}`}
+              pageNumber={index + 1}
+            />
+          ))}
+        </Document>
       </div>
     )
   }
@@ -39,4 +69,4 @@ class ResumePage extends Component {
 
 ResumePage.propTypes = {}
 
-export default ResumePage
+export default sizeMe()(ResumePage)
