@@ -1,6 +1,7 @@
 .contact-page_content-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   width: 90%;
   max-width: 1200px;
@@ -9,7 +10,9 @@
   background-color: var(--grey-200);
   padding: 2.5rem;
 }
-
+.contact-page_title-content {
+  /* width: 100%; */
+}
 @media (max-width: 600px) {
   .contact-page_content-container {
     margin-top: 0;

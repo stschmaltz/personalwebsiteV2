@@ -5,7 +5,7 @@
 }
 @media (max-width: 1200px) {
   .page-title__main-container {
-    max-width: 16rem;
+    /* max-width: 16rem; */
   }
 }
 @media (max-width: 600px) {

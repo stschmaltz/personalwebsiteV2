@@ -13,10 +13,6 @@
   z-index: 1000;
 }
 
-.mobile-nav-bar__nav-item-container {
-  /* max-width: 20%; */
-}
-
 .mobile-nav-bar__nav-item-text {
   color: #ddd;
   text-decoration: none;

@@ -37,7 +37,7 @@ class ResumePage extends Component {
 
     const { file, numPages } = this.state
 
-    const resumeWidth = Math.min(width - 85, 1000)
+    const resumeWidth = Math.min(width * 1.05, 1000)
     const realResumeWidth = Math.max(resumeWidth, 600)
     return (
       <div className="resume-page_main-container">
@@ -46,22 +46,23 @@ class ResumePage extends Component {
           title="Resume"
           ContentComponent={DownloadButton}
         />
-
-        <Document
-          renderMode="svg"
-          className="resume-page_resume-document"
-          file={file}
-          onLoadSuccess={this.onDocumentLoadSuccess}
-        >
-          {Array.from(new Array(numPages), (el, index) => (
-            <Page
-              width={realResumeWidth}
-              className="resume-page_resume-page"
-              key={`page_${index + 1}`}
-              pageNumber={index + 1}
-            />
-          ))}
-        </Document>
+        <div className="resume-page_resume-container">
+          <Document
+            renderMode="svg"
+            className="resume-page_resume-document"
+            file={file}
+            onLoadSuccess={this.onDocumentLoadSuccess}
+          >
+            {Array.from(new Array(numPages), (el, index) => (
+              <Page
+                width={realResumeWidth}
+                className="resume-page_resume-page"
+                key={`page_${index + 1}`}
+                pageNumber={index + 1}
+              />
+            ))}
+          </Document>
+        </div>
       </div>
     )
   }

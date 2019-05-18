@@ -14,7 +14,7 @@ const PortfolioPagePortfolioItem = ({
 }) => {
   return (
     <div className="portfolio-page-portfolio_container">
-      <a href={siteUrl}>
+      <a href={siteUrl} className="portfolio-page-portfolio_wrapper">
         <ReactCardFlipper width="100%" height="250px" behavior="hover">
           <div className="portfolio-page-portfolio_thumbnail">
             <div className="portfolio-page-portfolio_banner">
