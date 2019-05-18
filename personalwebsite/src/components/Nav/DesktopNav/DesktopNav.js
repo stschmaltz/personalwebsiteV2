@@ -7,7 +7,6 @@ import DesktopNavItem from './DesktopNavItem'
 const DesktopNav = ({ location }) => {
   const isHome = location.pathname === '/' ? 'isHome   ' : ''
   const containerClass = isHome + 'desktop-nav-bar__main-container'
-  console.log('locationlocation', location)
   return (
     <div className={containerClass}>
       <nav className="desktop-nav-bar__navigation">

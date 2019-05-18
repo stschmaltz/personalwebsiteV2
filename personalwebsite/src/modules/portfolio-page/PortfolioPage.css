@@ -1,6 +1,7 @@
 .portfolio-page_content-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   width: 90%;
   max-width: 1200px;
   margin: 3rem 0;

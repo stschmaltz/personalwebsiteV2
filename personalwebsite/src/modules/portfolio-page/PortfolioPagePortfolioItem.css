@@ -6,7 +6,17 @@
   color: var(--black-900);
   font-weight: 700;
 }
-
+@media (max-width: 1200px) {
+  .portfolio-page-portfolio_container {
+    min-width: 250px;
+  }
+}
+@media (max-width: 1000px) {
+  .portfolio-page-portfolio_container {
+    min-width: 275px;
+    /* height: 100%; */
+  }
+}
 .portfolio-page-portfolio_thumbnail {
   position: relative;
   padding: 1rem;

@@ -18,7 +18,6 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => {
-      console.log('zzz', data)
       return (
         <>
           <Location>

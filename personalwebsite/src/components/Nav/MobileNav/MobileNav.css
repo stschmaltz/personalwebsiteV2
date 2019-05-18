@@ -10,6 +10,7 @@
   left: 0;
   color: #ddd;
   background-color: var(--black-300);
+  z-index: 1000;
 }
 
 .mobile-nav-bar__nav-item-container {

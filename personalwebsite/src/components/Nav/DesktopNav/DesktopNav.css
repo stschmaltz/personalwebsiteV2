@@ -10,6 +10,7 @@
   max-width: 900px;
   padding: 1.5rem;
 }
+
 .isHome {
   /* background-color: transparent; */
 }
@@ -32,7 +33,11 @@
 .desktop-nav-bar__link-item h1 {
   font-size: 2.1rem;
 }
-
+@media (max-width: 800px) {
+  .desktop-nav-bar__link-item h1 {
+    font-size: 1.8rem;
+  }
+}
 .desktop-nav-bar__logo {
   padding: 0.5rem;
   background-color: #111;

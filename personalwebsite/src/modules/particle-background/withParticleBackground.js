@@ -20,7 +20,6 @@ export const withParticleBackground = WrappedComponent => props => {
       style={{ pointerEvents: 'none', position: 'absolute' }}
     />
   ))
-  console.log(params)
   return (
     <div>
       {particles}
