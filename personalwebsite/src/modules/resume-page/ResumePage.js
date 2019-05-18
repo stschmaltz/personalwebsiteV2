@@ -38,7 +38,7 @@ class ResumePage extends Component {
     const { file, numPages } = this.state
 
     const resumeWidth = Math.min(width * 1.05, 1000)
-    const realResumeWidth = Math.max(resumeWidth, 600)
+    const realResumeWidth = Math.max(resumeWidth, 500)
     return (
       <div className="resume-page_main-container">
         <PageTitle

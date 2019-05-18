@@ -9,6 +9,15 @@
   background-color: var(--grey-200);
   padding: 2.5rem;
 }
+@media (max-width: 600px) {
+  .resume-page_main-container {
+    margin-top: 0;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 0;
+    box-sizing: border-box;
+  }
+}
 .resume-page_resume-container {
   display: flex;
   width: 100%;
