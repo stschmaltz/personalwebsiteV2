@@ -10,6 +10,7 @@ export const withParticleBackground = WrappedComponent => props => {
   }
   const particles = colours.map(colour => (
     <Particles
+      key={`particle-${colour}`}
       params={{
         ...particleParams,
         particles: {

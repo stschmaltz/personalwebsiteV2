@@ -1,4 +1,4 @@
-.contact-page_content-container {
+.about-page_content-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -10,24 +10,15 @@
   background-color: var(--grey-200);
   padding: 2.5rem;
 }
-.contact-page_form-container {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-}
-@media (max-width: 1000px) {
-  .contact-page_form-container {
-    justify-content: flex-start;
-  }
-}
-.contact-page_title-content {
-}
 @media (max-width: 600px) {
-  .contact-page_content-container {
+  .about-page_content-container {
     margin-top: 0;
     flex-direction: column;
     width: 100%;
     padding: 2rem 0;
     box-sizing: border-box;
   }
+}
+
+.about-page_title-content {
 }
