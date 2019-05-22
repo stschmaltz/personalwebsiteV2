@@ -13,7 +13,9 @@ const ContactPage = props => {
         title="Contact"
         ContentComponent={ContactPageTitleContent}
       />
-      <ContactPageForm />
+      <div className="contact-page_form-container">
+        <ContactPageForm />
+      </div>
     </div>
   )
 }
