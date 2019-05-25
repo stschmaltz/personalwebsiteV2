@@ -1,0 +1,9 @@
+.about-me-page_headshot-image {
+  position: absolute;
+  height: 100%;
+}
+.about-me-page_headshot-image-container {
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}

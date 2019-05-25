@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import AboutMePhoto from './AboutMePhoto'
 
 const AboutPageTitleContent = props => {
   return (
@@ -7,10 +8,11 @@ const AboutPageTitleContent = props => {
       <p>
         Hey there! My name is Shane Schmaltz.
         <br />
-        Thank you for checking out my website. <br />
-        I built it myself using ReactJS and Gatsby.
-        <br />I am always looking for new interesting opportunities in software
-        development, contact me know if you have any 😊.
+        I'm a full-stack software developer living in the heart of Calgary
+        Alberta Canada.
+        <br />
+        <AboutMePhoto />
+        Thank you for checking out my website! 😊
       </p>
     </div>
   )
