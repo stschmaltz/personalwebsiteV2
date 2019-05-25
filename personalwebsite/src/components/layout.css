@@ -5,11 +5,12 @@
   --primary-color-200: #e8909c;
   --primary-color-300: #df6374;
   --primary-color-400: #d84156;
-  --primary-color-500: #d12038;
+  --primary-color-500: rgb(209, 32, 56);
+  --primary-color-500-translucent: rgba(181, 11, 23, 0.8);
   --primary-color-600: #cc1c32;
   --primary-color-700: #c6182b;
   --primary-color-800: #c01324;
-  --primary-color-900: #b50b17;
+  --primary-color-900: rgb(181, 11, 23);
   --primary-color-A100: #ffe1e3;
   --primary-color-A200: #ffaeb2;
   --primary-color-A400: #ff7b82;
@@ -66,6 +67,38 @@
   --black-A700: #d40000;
   --black-contrast: #ffffff;
 
+  --fuscia-50: #f5e7fb;
+  --fuscia-100: #e6c4f4;
+  --fuscia-200: #d59ded;
+  --fuscia-300: #c476e6;
+  --fuscia-400: #b758e0;
+  --fuscia-500: #aa3bdb;
+  --fuscia-600: #a335d7;
+  --fuscia-700: #992dd2;
+  --fuscia-800: #9026cd;
+  --fuscia-900: #7f19c4;
+  --fuscia-A100: #fcf7ff;
+  --fuscia-A200: #e6c4ff;
+  --fuscia-A400: #d091ff;
+  --fuscia-A700: #c578ff;
+  --fuscia-contrast: #ffffff;
+
+  --purple-50: #e7e8f8;
+  --purple-100: #c2c6ed;
+  --purple-200: #9aa0e2;
+  --purple-300: #7279d6;
+  --purple-400: #535dcd;
+  --purple-500: #3540c4;
+  --purple-600: #303abe;
+  --purple-700: #2832b6;
+  --purple-800: #222aaf;
+  --purple-900: #161ca2;
+  --purple-A100: #d5d7ff;
+  --purple-A200: #a2a6ff;
+  --purple-A400: #6f75ff;
+  --purple-A700: #565cff;
+  --purple-contrast: #ffffff;
+
   --grey-50: #f9fafb;
   --grey-100: #eff2f4;
   --grey-200: #e5e9ed;
@@ -81,7 +114,7 @@
   --grey-A400: #ffffff;
   --grey-A700: #f6faff;
   --grey-contrast: #000000;
-  --primary-text: rbga(0, 0, 0, 0.87);
+  --primary-text: rgba(0, 0, 0, 0.87);
   --secondary-text: #aeb9c5;
   --tertiary-text: #d7dce2;
 

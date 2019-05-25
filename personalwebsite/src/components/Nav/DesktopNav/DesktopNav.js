@@ -6,20 +6,38 @@ import DesktopNavItem from './DesktopNavItem'
 
 const DesktopNav = ({ location }) => {
   const isHome = location.pathname === '/' ? 'isHome   ' : ''
-  const containerClass = isHome + 'desktop-nav-bar__main-container'
+
+  const currentPath = location.pathname
+  console.log(currentPath)
   return (
-    <div className={containerClass}>
+    <div className="desktop-nav-bar__main-container">
       <nav className="desktop-nav-bar__navigation">
         <ul className="desktop-nav-bar__navigation-list">
-          <DesktopNavItem title="About" path="/about/" />
-          <DesktopNavItem title="Resume" path="/resume/" />
+          <DesktopNavItem
+            title="About"
+            isSelected={currentPath === '/about/'}
+            path="/about/"
+          />
+          <DesktopNavItem
+            isSelected={currentPath === '/resume/'}
+            title="Resume"
+            path="/resume/"
+          />
           <div className="desktop-nav-bar__logo">
             <Link to="/">
               <div className="desktop-nav-bar__logo-inner" />
             </Link>
           </div>
-          <DesktopNavItem title="Portfolio" path="/portfolio/" />
-          <DesktopNavItem title="Contact" path="/contact/" />
+          <DesktopNavItem
+            isSelected={currentPath === '/portfolio/'}
+            title="Portfolio"
+            path="/portfolio/"
+          />
+          <DesktopNavItem
+            isSelected={currentPath === '/contact/'}
+            title="Contact"
+            path="/contact/"
+          />
         </ul>
       </nav>
     </div>
