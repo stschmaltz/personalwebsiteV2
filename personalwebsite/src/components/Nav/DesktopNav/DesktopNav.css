@@ -48,10 +48,18 @@
   transform: rotate(45deg);
 }
 .desktop-nav-bar__logo-inner {
+  position: relative;
   background-color: #ddd;
   width: 3rem;
   height: 3rem;
 }
 .desktop-nav-bar__logo-text {
+  position: absolute;
   transform: rotate(-45deg);
+  top: -5px;
+  left: 0.5rem;
+  font-weight: bold;
+  text-shadow: 10px 15px 0px var(--purple-500);
+  color: var(--primary-color-900);
+  font-size: 2rem;
 }

@@ -25,7 +25,9 @@ const DesktopNav = ({ location }) => {
           />
           <div className="desktop-nav-bar__logo">
             <Link to="/">
-              <div className="desktop-nav-bar__logo-inner" />
+              <div className="desktop-nav-bar__logo-inner">
+                <span className="desktop-nav-bar__logo-text">S</span>
+              </div>
             </Link>
           </div>
           <DesktopNavItem

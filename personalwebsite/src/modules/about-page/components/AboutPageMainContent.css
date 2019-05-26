@@ -9,3 +9,7 @@
   /* justify-content: space-around; */
   align-items: flex-end;
 }
+
+.about-page-main_contact-me-btn {
+  font-weight: bold;
+}
