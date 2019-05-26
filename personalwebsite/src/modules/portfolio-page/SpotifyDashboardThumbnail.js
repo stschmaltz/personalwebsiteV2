@@ -11,10 +11,10 @@ const SpotifyDashboardThumbnail = props => {
         query={graphql`
           query {
             placeholderImage: file(
-              relativePath: { eq: "spotfiy-dashboard-thumbnail.png" }
+              relativePath: { eq: "small-spotfiy-dashboard-thumbnail.jpg" }
             ) {
               childImageSharp {
-                fluid(maxWidth: 1000) {
+                fluid(maxWidth: 500) {
                   ...GatsbyImageSharpFluid
                 }
               }

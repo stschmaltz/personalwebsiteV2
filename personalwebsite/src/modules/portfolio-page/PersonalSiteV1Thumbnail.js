@@ -11,10 +11,10 @@ const PersonalSiteV1Thumbnail = props => {
         query={graphql`
           query {
             placeholderImage: file(
-              relativePath: { eq: "shane-schmaltz-v1-thumbnail.png" }
+              relativePath: { eq: "small-shane-schmaltz-v1-thumbnail.jpg" }
             ) {
               childImageSharp {
-                fluid(maxWidth: 1000) {
+                fluid(maxWidth: 500) {
                   ...GatsbyImageSharpFluid
                 }
               }
