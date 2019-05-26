@@ -1,6 +1,6 @@
 .page-title__main-container {
   max-width: 22rem;
-  min-width: 10rem;
+  min-width: 22rem;
   width: 22rem;
 }
 @media (max-width: 1200px) {

@@ -1,4 +1,14 @@
 :root {
+  --primary-text: rgba(0, 0, 0, 0.87);
+  --secondary-text: #aeb9c5;
+  --tertiary-text: #d7dce2;
+
+  --basic-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  --elevation-shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+
+  --main-content-background-color: var(--grey-100);
+
   --primary-color: #d12038;
   --primary-color-50: #f9e4e7;
   --primary-color-100: #f1bcc3;
@@ -114,11 +124,6 @@
   --grey-A400: #ffffff;
   --grey-A700: #f6faff;
   --grey-contrast: #000000;
-  --primary-text: rgba(0, 0, 0, 0.87);
-  --secondary-text: #aeb9c5;
-  --tertiary-text: #d7dce2;
-
-  --basic-text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 * {
   box-sizing: border-box;

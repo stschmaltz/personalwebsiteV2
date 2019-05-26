@@ -1,0 +1,12 @@
+.about-me-page-title_main-container {
+  flex-shrink: 0;
+}
+.about-me-page-title_photo-card {
+  background-color: #fff;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: var(--elevation-shadow-1);
+}
