@@ -9,7 +9,6 @@ const AboutPageTitleContent = props => {
   const myAgeInYears = Math.floor(
     differenceInCalendarISOWeeks(new Date(), new Date(1992, 10, 16, 0, 0)) / 52,
   )
-  console.log(myAgeInYears)
   return (
     <div className="about-me-page-title_main-container">
       <p>
@@ -24,7 +23,6 @@ const AboutPageTitleContent = props => {
         <AboutMePhoto />
         Thank you for checking out my website! 😊
       </div>
-      
     </div>
   )
 }

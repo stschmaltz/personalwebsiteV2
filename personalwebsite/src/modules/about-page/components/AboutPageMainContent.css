@@ -1,8 +1,8 @@
 .about-page-main_container {
-  max-width: 700px;
-  min-width: 350px;
+  max-width: calc(100% - 22rem);
+  min-width: 550px;
   flex-grow: 1;
-  flex-shrink: 1;
+  flex-shrink: 5;
   padding-left: 3rem;
   margin-top: 2rem;
   margin-bottom: 0;
@@ -10,7 +10,24 @@
   flex-direction: column;
   align-items: flex-end;
 }
+@media (max-width: 1200px) {
+  .about-page-main_container {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .about-page-main_container {
+    padding-left: 0;
+  }
+}
 
 .about-page-main_contact-me-btn {
   font-weight: bold;
+}
+
+.about-page-main_timeline-container {
+  width: 100%;
+  min-height: 10rem;
+  height: 40%;
+  background-color: var(--purple-50);
 }

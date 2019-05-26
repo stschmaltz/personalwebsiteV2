@@ -4,8 +4,6 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 
 const DesktopNavItem = ({ title, path, isSelected }) => {
-  console.log(isSelected)
-  //borderBottom: '4px solid var(--primary-color-500)'
   const selectionStyle = isSelected
     ? { textShadow: '1px 1px 5px var(--primary-color-200)' }
     : {}

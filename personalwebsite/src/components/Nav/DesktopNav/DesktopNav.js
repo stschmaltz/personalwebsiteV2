@@ -8,7 +8,6 @@ const DesktopNav = ({ location }) => {
   const isHome = location.pathname === '/' ? 'isHome   ' : ''
 
   const currentPath = location.pathname
-  console.log(currentPath)
   return (
     <div className="desktop-nav-bar__main-container">
       <nav className="desktop-nav-bar__navigation">

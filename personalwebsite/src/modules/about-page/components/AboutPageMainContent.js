@@ -9,19 +9,22 @@ const AboutPageMainContent = props => {
       <p>
         I am a full-stack software developer with a special focus on front-end
         work and a growing passion for design. I am constantly working on
-        improving my skills and exploring If you have any interesting
-        opportunities for me, please{' '}
+        improving my skills and exploring new challenges. If you have any
+        interesting opportunities for me, please{' '}
         <Link to="/contact" className="about-page-main_contact-me-btn">
           contact me.
         </Link>
+        
       </p>
       <div className="about-page-main_timeline-container">
         <span className="about-page-main_timeline-title">Timeline</span>
         <div className="about-page-main_timeline-inner-container">
-          <div className="about-page-main_timeline-university" />
-          <div className="about-page-main_timeline-replicon-qa" />
-          <div className="about-page-main_timeline-replicon-dev" />
-          <div className="about-page-main_timeline-ospre-dev" />
+          <div className="about-page-main_timeline-bar">
+            <div className="about-page-main_timeline-university" />
+            <div className="about-page-main_timeline-replicon-qa" />
+            <div className="about-page-main_timeline-replicon-dev" />
+            <div className="about-page-main_timeline-osprey-dev" />
+          </div>
         </div>
       </div>
     </div>
