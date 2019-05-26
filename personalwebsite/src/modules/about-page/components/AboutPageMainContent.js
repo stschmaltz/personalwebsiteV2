@@ -14,7 +14,6 @@ const AboutPageMainContent = props => {
         <Link to="/contact" className="about-page-main_contact-me-btn">
           contact me.
         </Link>
-        
       </p>
       <div className="about-page-main_timeline-container">
         <span className="about-page-main_timeline-title">Timeline</span>
@@ -25,6 +24,14 @@ const AboutPageMainContent = props => {
             <div className="about-page-main_timeline-replicon-dev" />
             <div className="about-page-main_timeline-osprey-dev" />
           </div>
+        </div>
+      </div>
+      <div className="about-page-main_hobbies-container">
+        <span>Hobbies</span>
+        <div className="about-page-main_hobbies-inner-container">
+          <div className="about-page-main_hobby" />
+          <div className="about-page-main_hobby" />
+          <div className="about-page-main_hobby" />
         </div>
       </div>
     </div>

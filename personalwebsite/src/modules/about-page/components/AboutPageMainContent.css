@@ -20,14 +20,38 @@
     padding-left: 0;
   }
 }
-
-.about-page-main_contact-me-btn {
-  font-weight: bold;
-}
-
 .about-page-main_timeline-container {
+  position: relative;
   width: 100%;
   min-height: 10rem;
   height: 40%;
   background-color: var(--purple-50);
+}
+.about-page-main_timeline-bar {
+  position: absolute;
+  top: 45%;
+  height: 1rem;
+  width: 100%;
+  background-color: var(--purple-200);
+}
+
+.about-page-main_hobbies-container {
+  width: 100%;
+  height: 30%;
+  background-color: var(--primary-color-50);
+}
+.about-page-main_hobbies-inner-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.about-page-main_hobby {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--primary-color-200);
+}
+
+.about-page-main_contact-me-btn {
+  font-weight: bold;
 }
