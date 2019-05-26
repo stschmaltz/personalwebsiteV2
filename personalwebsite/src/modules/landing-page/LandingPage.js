@@ -16,6 +16,9 @@ const seoKeyWords = [
   `Software Developer`,
   `Software`,
   `Developer`,
+  `Website`,
+  ``,
+  `Web Developer`
 ]
 
 const LandingPage = props => {
