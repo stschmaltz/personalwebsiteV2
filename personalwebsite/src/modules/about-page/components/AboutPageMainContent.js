@@ -19,16 +19,17 @@ const AboutPageMainContent = props => {
         <span className="about-page-main_timeline-title">Timeline</span>
         <div className="about-page-main_timeline-inner-container">
           <div className="about-page-main_timeline-bar">
-            <div className="about-page-main_timeline-university" />
-            <div className="about-page-main_timeline-replicon-qa" />
-            <div className="about-page-main_timeline-replicon-dev" />
-            <div className="about-page-main_timeline-osprey-dev" />
+            <div className="about-page-main_timeline-item about-page-main_timeline-university" />
+            <div className="about-page-main_timeline-item about-page-main_timeline-replicon-qa" />
+            <div className="about-page-main_timeline-item about-page-main_timeline-replicon-dev" />
+            <div className="about-page-main_timeline-item about-page-main_timeline-osprey" />
           </div>
         </div>
       </div>
       <div className="about-page-main_hobbies-container">
         <span>Hobbies</span>
         <div className="about-page-main_hobbies-inner-container">
+          <div className="about-page-main_hobby" />
           <div className="about-page-main_hobby" />
           <div className="about-page-main_hobby" />
           <div className="about-page-main_hobby" />

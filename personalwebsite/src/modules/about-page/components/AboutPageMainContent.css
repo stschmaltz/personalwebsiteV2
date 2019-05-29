@@ -34,6 +34,26 @@
   width: 100%;
   background-color: var(--purple-200);
 }
+.about-page-main_timeline-item {
+  position: absolute;
+  bottom: -1rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 20%;
+}
+.about-page-main_timeline-university {
+  left: 1rem;
+}
+.about-page-main_timeline-replicon-qa {
+  left: 5rem;
+}
+.about-page-main_timeline-replicon-dev {
+  left: 10rem;
+}
+.about-page-main_timeline-osprey {
+  left: 15rem;
+}
 
 .about-page-main_hobbies-container {
   width: 100%;
