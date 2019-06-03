@@ -15,7 +15,7 @@
   --primary-color-200: #e8909c;
   --primary-color-300: #df6374;
   --primary-color-400: #d84156;
-  --primary-color-500: rgb(209, 32, 56);
+  --primary-color-500: #d12038;
   --primary-color-500-translucent: rgba(181, 11, 23, 0.8);
   --primary-color-600: #cc1c32;
   --primary-color-700: #c6182b;
@@ -92,6 +92,22 @@
   --fuscia-A400: #d091ff;
   --fuscia-A700: #c578ff;
   --fuscia-contrast: #ffffff;
+
+  --yellow-50: #fcf6e3;
+  --yellow-100: #f8e7b9;
+  --yellow-200: #f4d88b;
+  --yellow-300: #efc85d;
+  --yellow-400: #ebbc3a;
+  --yellow-500: #e8b017;
+  --yellow-600: #e5a914;
+  --yellow-700: #e2a011;
+  --yellow-800: #de970d;
+  --yellow-900: #d88707;
+  --yellow-A100: #ffffff;
+  --yellow-A200: #ffeacf;
+  --yellow-A400: #ffd49c;
+  --yellow-A700: #ffc982;
+  --yellow-contrast: #000000;
 
   --purple-50: #e7e8f8;
   --purple-100: #c2c6ed;

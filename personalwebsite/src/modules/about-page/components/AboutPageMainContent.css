@@ -27,32 +27,44 @@
   height: 40%;
   background-color: var(--purple-50);
 }
+.about-page-main_timeline-year-container {
+  display: flex;
+  justify-content: space-between;
+}
 .about-page-main_timeline-bar {
   position: absolute;
   top: 45%;
-  height: 1rem;
+  height: 0.6rem;
   width: 100%;
   background-color: var(--purple-200);
 }
 .about-page-main_timeline-item {
   position: absolute;
-  bottom: -1rem;
-  width: 3rem;
-  height: 3rem;
-  background-color: #fff;
-  border-radius: 20%;
+  bottom: -0.75rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--yellow-200);
+  border-radius: 50%;
 }
+
+.divider {
+  /* background-color: ; */
+  width: 1px;
+  height: 100%;
+  position: absolute;
+}
+
 .about-page-main_timeline-university {
-  left: 1rem;
+  left: 5%;
 }
 .about-page-main_timeline-replicon-qa {
-  left: 5rem;
+  left: 15%;
 }
 .about-page-main_timeline-replicon-dev {
-  left: 10rem;
+  left: 45%;
 }
 .about-page-main_timeline-osprey {
-  left: 15rem;
+  left: 90%;
 }
 
 .about-page-main_hobbies-container {
