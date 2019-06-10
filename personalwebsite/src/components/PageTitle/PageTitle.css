@@ -5,13 +5,13 @@
 }
 @media (max-width: 1200px) {
   .page-title__main-container {
+    min-width: auto;
   }
 }
 @media (max-width: 600px) {
   .page-title__main-container {
-    max-width: 100%;
-    width: 90%;
-    margin: auto;
+    min-width: auto;
+    width: 100%;
   }
 }
 

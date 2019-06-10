@@ -19,7 +19,7 @@ const AboutPageMainContent = ({ size }) => {
           <div className="about-page-main_hobby" />
           <div className="about-page-main_hobby" />
         </div>
-      </div>
+      </div> 
     ) : null
   return (
     <div className="about-page-main_container">

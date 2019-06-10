@@ -14,10 +14,12 @@
 }
 @media (max-width: 600px) {
   .about-page_content-container {
+    border-radius: 0;
     margin-top: 0;
     flex-direction: column;
     width: 100%;
     padding: 2rem 0;
+
     box-sizing: border-box;
   }
 }
