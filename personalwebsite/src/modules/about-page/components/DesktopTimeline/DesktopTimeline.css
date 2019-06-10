@@ -1,0 +1,109 @@
+.about-page-main_timeline-container {
+  margin: 3rem 0;
+  position: relative;
+
+  min-width: 550px;
+  /* min-width: 30rem; */
+  width: 100%;
+  min-height: 10rem;
+  height: 40%;
+  background-color: var(--purple-50);
+}
+
+.about-page-main_timeline-year-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-page-main_timeline-bar {
+  position: absolute;
+  top: 45%;
+  height: 0.6rem;
+  width: 100%;
+  background-color: var(--purple-200);
+}
+
+.about-page-main_timeline-item {
+  position: absolute;
+  height: 2.5rem;
+  padding: 0 0.5rem;
+  background-color: var(--yellow-200);
+  border: 1px solid var(--yellow-900);
+  border-radius: 15px;
+  z-index: 1;
+  font-size: 0.9rem;
+}
+
+.timeline-triangle {
+  background-color: var(--yellow-200);
+
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  z-index: -1;
+}
+
+.timeline-university-triangle {
+  top: -10px;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.timeline-qa-triangle {
+  bottom: -8px;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.timeline-fsdev-triangle {
+  top: -10px;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.timeline-osprey-triangle {
+  right: 40px;
+  bottom: -8px;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.about-page-main_timeline-year-item-container {
+  display: flex;
+}
+
+.divider {
+  background-color: var(--purple-100);
+  width: 1px;
+  height: 100%;
+  position: absolute;
+}
+
+.timeline-year-label {
+  margin-left: -17px;
+  font-size: 0.8rem;
+  color: var(--purple-500);
+}
+
+.about-page-main_timeline-university {
+  width: 6rem;
+  height: 4rem;
+  left: 2%;
+  bottom: -4.5rem;
+}
+
+.about-page-main_timeline-replicon-qa {
+  left: 8%;
+  bottom: 1rem;
+}
+
+.about-page-main_timeline-replicon-dev {
+  left: 25%;
+  bottom: -3rem;
+}
+
+.about-page-main_timeline-osprey {
+  /* left: 87%; */
+  left: 65%;
+  bottom: 1rem;
+}
