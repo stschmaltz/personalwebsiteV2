@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './DesktopTimeline.css'
 import TimelineYearDivider from './TimelineYearDivider'
+import TimelineItem from './TimelineItem'
 
 const DesktopTimeline = props => {
   return (
@@ -16,35 +17,26 @@ const DesktopTimeline = props => {
           <div className="about-page-main_timeline-year-item-container" />
         </div>
         <div className="about-page-main_timeline-bar">
-          <div
-            className="about-page-main_timeline-item 
-              about-page-main_timeline-university"
-          >
-            <div className="timeline-triangle timeline-university-triangle" />
-            <span>Graduated University</span>
-          </div>
-          <div
-            className="about-page-main_timeline-item 
-              about-page-main_timeline-replicon-qa"
-          >
-            <div className="timeline-triangle timeline-qa-triangle" />
-            <span>Test Automation Engineer</span>
-          </div>
-          <div
-            className="about-page-main_timeline-item 
-              about-page-main_timeline-replicon-dev"
-          >
-            <div className="timeline-triangle timeline-fsdev-triangle" />
-            <span>Full-Stack Developer</span>
-          </div>
-          <div
-            className="about-page-main_timeline-item 
-              about-page-main_timeline-osprey"
-          >
-            <div className="timeline-triangle timeline-osprey-triangle" />
-
-            <span>Front-End Developer</span>
-          </div>
+          <TimelineItem
+            date="April 2015"
+            titleText="Graduated University"
+            eventName="university"
+          />
+          <TimelineItem
+            date="Replicon | May 2015"
+            titleText="Test Automation Engineer"
+            eventName="replicon-qa"
+          />
+          <TimelineItem
+            date="Replicon | May 2016"
+            titleText="Full-Stack Developer"
+            eventName="replicon-dev"
+          />
+          <TimelineItem
+            date="Osprey | March 2019"
+            titleText="Front-End Developer"
+            eventName="osprey"
+          />
         </div>
       </div>
     </div>

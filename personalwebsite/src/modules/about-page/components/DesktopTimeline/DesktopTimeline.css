@@ -1,7 +1,7 @@
 .about-page-main_timeline-container {
   margin: 3rem 0;
   position: relative;
-
+  border: 1px solid var(--purple-100);
   min-width: 550px;
   /* min-width: 30rem; */
   width: 100%;
@@ -18,24 +18,26 @@
 .about-page-main_timeline-bar {
   position: absolute;
   top: 45%;
-  height: 0.6rem;
+  height: 0.5rem;
   width: 100%;
   background-color: var(--purple-200);
 }
 
 .about-page-main_timeline-item {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   height: 2.5rem;
   padding: 0 0.5rem;
   background-color: var(--yellow-200);
   border: 1px solid var(--yellow-900);
   border-radius: 15px;
-  z-index: 1;
   font-size: 0.9rem;
 }
 
 .timeline-triangle {
   background-color: var(--yellow-200);
+  /* border: 1px solid var(--yellow-900); */
 
   width: 25px;
   height: 25px;
@@ -49,13 +51,13 @@
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
-.timeline-qa-triangle {
+.timeline-replicon-qa-triangle {
   bottom: -8px;
   -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
   clip-path: polygon(50% 100%, 0 0, 100% 0);
 }
 
-.timeline-fsdev-triangle {
+.timeline-replicon-dev-triangle {
   top: -10px;
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -82,7 +84,9 @@
 .timeline-year-label {
   margin-left: -17px;
   font-size: 0.8rem;
+  font-weight: bold;
   color: var(--purple-500);
+  opacity: 0.6;
 }
 
 .about-page-main_timeline-university {
@@ -106,4 +110,42 @@
   /* left: 87%; */
   left: 65%;
   bottom: 1rem;
+}
+
+.about-page-main_timeline-item-title {
+  color: rgb(109, 69, 5);
+  line-height: 1rem;
+}
+.about-page-main_timeline-item-secondary-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-page-main_timeline-item-date {
+  font-size: 0.8rem;
+  color: rgba(109, 69, 5, 0.7);
+}
+.about-page-main_timeline-item-info-icon {
+  color: rgba(109, 69, 5, 0.7);
+  margin-right: -4px;
+}
+
+.about-page-main_timeline-item-description-container {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 100;
+  width: 15rem;
+  border-radius: 15px;
+  background-color: #fff;
+  border: 1px solid darkgoldenrod;
+  height: 10rem;
+  visibility: hidden;
+}
+
+.about-page-main_timeline-item:hover
+  .about-page-main_timeline-item-description-container {
+  visibility: visible;
 }
