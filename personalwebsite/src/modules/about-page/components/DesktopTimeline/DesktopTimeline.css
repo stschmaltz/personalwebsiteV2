@@ -5,6 +5,7 @@
   min-width: 550px;
   /* min-width: 30rem; */
   width: 100%;
+  padding-left: 2rem;
   min-height: 10rem;
   height: 40%;
   background-color: var(--purple-50);
@@ -17,6 +18,7 @@
 
 .about-page-main_timeline-bar {
   position: absolute;
+  left: 0;
   top: 45%;
   height: 0.5rem;
   width: 100%;
