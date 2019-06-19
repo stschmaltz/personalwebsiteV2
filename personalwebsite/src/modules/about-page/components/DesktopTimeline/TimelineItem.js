@@ -19,7 +19,7 @@ const TimelineItem = ({ titleText, eventName, date }) => {
         />
       </div>
       <div className="about-page-main_timeline-item-description-container">
-        yo this is more deets
+        this is a message
       </div>
     </div>
   )
