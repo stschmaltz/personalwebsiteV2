@@ -1,9 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './DesktopTimeline.css'
+import './TimelineItem.css'
 import InfoIcon from '@material-ui/icons/InfoOutlined'
 
-const TimelineItem = ({ titleText, eventName, date }) => {
+const TimelineItem = ({
+  titleText,
+  eventName,
+  secondaryText,
+  description,
+  location,
+  dateRange,
+}) => {
   return (
     <div
       className={`about-page-main_timeline-item 
@@ -12,14 +19,24 @@ const TimelineItem = ({ titleText, eventName, date }) => {
       <div className={`timeline-triangle timeline-${eventName}-triangle`} />
       <span className="about-page-main_timeline-item-title">{titleText}</span>
       <div className="about-page-main_timeline-item-secondary-row">
-        <span className="about-page-main_timeline-item-date">{date}</span>
+        <span className="about-page-main_timeline-item-date">
+          {secondaryText}
+        </span>
         <InfoIcon
           style={{ fontSize: 14 }}
           className="about-page-main_timeline-item-info-icon"
         />
       </div>
       <div className="about-page-main_timeline-item-description-container">
-        this is a message
+        <h1 className="about-page-main_timeline-item-description-header">
+          {location}
+        </h1>
+        <p className="about-page-main_timeline-item-description-date">
+          {dateRange}
+        </p>
+        <p className="about-page-main_timeline-item-description-text">
+          {description}
+        </p>
       </div>
     </div>
   )

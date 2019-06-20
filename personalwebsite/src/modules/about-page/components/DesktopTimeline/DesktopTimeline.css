@@ -25,18 +25,6 @@
   background-color: var(--purple-200);
 }
 
-.about-page-main_timeline-item {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  height: 2.5rem;
-  padding: 0 0.5rem;
-  background-color: var(--yellow-200);
-  border: 1px solid var(--yellow-900);
-  border-radius: 15px;
-  font-size: 0.9rem;
-}
-
 .timeline-triangle {
   background-color: var(--yellow-200);
   /* border: 1px solid var(--yellow-900); */
@@ -89,65 +77,4 @@
   font-weight: bold;
   color: var(--purple-500);
   opacity: 0.6;
-}
-
-.about-page-main_timeline-university {
-  width: 6rem;
-  height: 4rem;
-  left: 2%;
-  bottom: -4.5rem;
-}
-
-.about-page-main_timeline-replicon-qa {
-  left: 8%;
-  bottom: 1rem;
-}
-
-.about-page-main_timeline-replicon-dev {
-  left: 25%;
-  bottom: -3rem;
-}
-
-.about-page-main_timeline-osprey {
-  /* left: 87%; */
-  left: 65%;
-  bottom: 1rem;
-}
-
-.about-page-main_timeline-item-title {
-  color: rgb(109, 69, 5);
-  line-height: 1rem;
-}
-.about-page-main_timeline-item-secondary-row {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.about-page-main_timeline-item-date {
-  font-size: 0.8rem;
-  color: rgba(109, 69, 5, 0.7);
-}
-.about-page-main_timeline-item-info-icon {
-  color: rgba(109, 69, 5, 0.7);
-  margin-right: -4px;
-}
-
-.about-page-main_timeline-item-description-container {
-  position: absolute;
-  top: 40px;
-  left: 0;
-  z-index: 100;
-  width: 15rem;
-  border-radius: 15px;
-  background-color: #fff;
-  border: 1px solid darkgoldenrod;
-  height: 10rem;
-  visibility: hidden;
-}
-
-.about-page-main_timeline-item:hover
-  .about-page-main_timeline-item-description-container {
-  visibility: visible;
 }
