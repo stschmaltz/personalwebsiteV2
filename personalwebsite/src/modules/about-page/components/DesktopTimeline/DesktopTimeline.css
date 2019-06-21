@@ -25,40 +25,7 @@
   background-color: var(--purple-200);
 }
 
-.timeline-triangle {
-  background-color: var(--yellow-200);
-  /* border: 1px solid var(--yellow-900); */
 
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  z-index: -1;
-}
-
-.timeline-university-triangle {
-  top: -10px;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
-
-.timeline-replicon-qa-triangle {
-  bottom: -8px;
-  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
-  clip-path: polygon(50% 100%, 0 0, 100% 0);
-}
-
-.timeline-replicon-dev-triangle {
-  top: -10px;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
-
-.timeline-osprey-triangle {
-  right: 40px;
-  bottom: -8px;
-  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
-  clip-path: polygon(50% 100%, 0 0, 100% 0);
-}
 
 .about-page-main_timeline-year-item-container {
   display: flex;

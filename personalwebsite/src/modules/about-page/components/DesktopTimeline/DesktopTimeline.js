@@ -25,7 +25,7 @@ const DesktopTimeline = props => {
             dateRange="Apr 2010 - Sep 2019"
             description="I graduated from the University of
              Calgary with a Bachelors of Science in Computer 
-             Science. "
+             Science."
           />
           <TimelineItem
             secondaryText="Replicon | May 2015"

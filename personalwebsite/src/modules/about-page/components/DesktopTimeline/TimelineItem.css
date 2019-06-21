@@ -4,7 +4,6 @@
   flex-direction: column;
   height: 2.5rem;
   padding: 0 0.5rem;
-  
   background-color: var(--yellow-200);
   border: 1px solid var(--yellow-900);
   border-radius: 15px;
@@ -29,7 +28,6 @@
 }
 
 .about-page-main_timeline-osprey {
-  /* left: 87%; */
   left: 65%;
   bottom: 1rem;
 }
@@ -37,8 +35,10 @@
 .about-page-main_timeline-item-title {
   color: rgb(109, 69, 5);
   line-height: 1rem;
+  z-index: 1;
 }
 .about-page-main_timeline-item-secondary-row {
+  z-index: 1;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -64,8 +64,44 @@
   padding: 0.5rem;
   background-color: var(--yellow-50);
   border: 1px solid var(--yellow-900);
-  /* height: 10rem; */
   visibility: hidden;
+}
+
+.timeline-triangle {
+  background-color: var(--yellow-200);
+  transform: rotate(45deg);
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  z-index: 0;
+}
+
+.timeline-university-triangle {
+  top: -8px;
+  right: 30%;
+  border-top: 1px solid var(--yellow-900);
+  border-left: 1px solid var(--yellow-900);
+}
+
+.timeline-replicon-qa-triangle {
+  bottom: -7px;
+  left: 15%;
+  border-bottom: 1px solid var(--yellow-900);
+  border-right: 1px solid var(--yellow-900);
+}
+
+.timeline-replicon-dev-triangle {
+  top: -8px;
+  left: 25%;
+  border-top: 1px solid var(--yellow-900);
+  border-left: 1px solid var(--yellow-900);
+}
+
+.timeline-osprey-triangle {
+  bottom: -7px;
+  right: 15%;
+  border-bottom: 1px solid var(--yellow-900);
+  border-right: 1px solid var(--yellow-900);
 }
 
 .about-page-main_timeline-item:hover

@@ -59,6 +59,7 @@
 
 .about-page-main_hobby {
   border: 1px solid var(--primary-color-900);
+  overflow: hidden;
 
   width: 5rem;
   height: 5rem;

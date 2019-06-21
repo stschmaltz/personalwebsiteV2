@@ -4,6 +4,7 @@ import './AboutPageMainContent.css'
 import { Link } from 'gatsby'
 import sizeMe from 'react-sizeme'
 import DesktopTimeline from './DesktopTimeline/DesktopTimeline'
+import BassPhoto from './hobby-photos/BassPhoto'
 
 const AboutPageMainContent = ({ size }) => {
   const { width } = size
@@ -14,7 +15,9 @@ const AboutPageMainContent = ({ size }) => {
       <div className="about-page-main_hobbies-container">
         <span>Hobbies</span>
         <div className="about-page-main_hobbies-inner-container">
-          <div className="about-page-main_hobby" />
+          <div className="about-page-main_hobby about-page-main_hobby-bass">
+            <BassPhoto />
+          </div>
           <div className="about-page-main_hobby" />
           <div className="about-page-main_hobby" />
           <div className="about-page-main_hobby" />
@@ -24,10 +27,11 @@ const AboutPageMainContent = ({ size }) => {
   return (
     <div className="about-page-main_container">
       <p className="about-page-main_paragraph">
-        I am a full-stack software developer with a special focus on front-end
-        work and a growing passion for design. I am constantly working on
-        improving my skills and exploring new challenges. If you have any
-        interesting opportunities for me, please{' '}
+        My primary focus and passion is front-end web development with a special
+        interest in UI/UX design. I have a lot of fun continuously working on
+        improving my skills and exploring new challenges. Software is magic that
+        is constantly changing the world and I am so glad to be a part of that.
+        <br /> If you have any interesting opportunities available, please{' '}
         <Link to="/contact" className="about-page-main_contact-me-btn">
           contact me.
         </Link>
