@@ -18,15 +18,31 @@
   --primary-color-300: #df6374;
   --primary-color-400: #d84156;
   --primary-color-500: #d12038;
-  --primary-color-500-translucent: rgba(181, 11, 23, 0.8);
-  --primary-color-600: #cc1c32;
+  --primary-color-500-translucent: hsla(356, 89%, 38%, 0.8);
+  --primary-color-600: #c91b2f;
   --primary-color-700: #c6182b;
   --primary-color-800: #c01324;
-  --primary-color-900: rgb(181, 11, 23);
+  --primary-color-900: #b50b17;
   --primary-color-A100: #ffe1e3;
   --primary-color-A200: #ffaeb2;
   --primary-color-A400: #ff7b82;
   --primary-color-A700: #ff6269;
+
+  --red-50: #f6e2e3;
+  --red-100: #e9b6b9;
+  --red-200: #da858b;
+  --red-300: #cb545d;
+  --red-400: #c0303a;
+  --red-500: #b50b17;
+  --red-600: #ae0a14;
+  --red-700: rgb(165, 8, 17);
+  --red-800: #9d060d;
+  --red-900: #8d0307;
+  --red-A100: #ffb9ba;
+  --red-A200: #ff8688;
+  --red-A400: #ff5356;
+  --red-A700: #ff3a3d;
+  --red-contrast: #ffffff;
 
   --white-full: #fff;
   --white-standard: #fafafa;

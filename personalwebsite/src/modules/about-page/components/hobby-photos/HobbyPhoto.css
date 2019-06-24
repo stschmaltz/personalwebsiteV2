@@ -1,13 +1,8 @@
 .hobby-bass-photo {
   position: absolute;
   bottom: -10px;
-  /* height: 100%; */
 }
 .hobby-bass-photo-container {
-  /* height: 250px; */
-  /* height: 100%; */
   max-height: 5rem;
   position: relative;
-
-  /* overflow: hidden; */
 }

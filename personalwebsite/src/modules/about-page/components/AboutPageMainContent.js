@@ -5,6 +5,7 @@ import { Link } from 'gatsby'
 import sizeMe from 'react-sizeme'
 import DesktopTimeline from './DesktopTimeline/DesktopTimeline'
 import BassPhoto from './hobby-photos/BassPhoto'
+import RunningPhoto from './hobby-photos/RunningPhoto'
 
 const AboutPageMainContent = ({ size }) => {
   const { width } = size
@@ -15,12 +16,30 @@ const AboutPageMainContent = ({ size }) => {
       <div className="about-page-main_hobbies-container">
         <span>Hobbies</span>
         <div className="about-page-main_hobbies-inner-container">
-          <div className="about-page-main_hobby about-page-main_hobby-bass">
-            <BassPhoto />
+          <div className="about-page-main_hobby-container">
+            <div className="about-page-main_hobby about-page-main_hobby-bass">
+              <BassPhoto />
+            </div>
+            <span className="about-page-main_bass-hobby-text">Bass Guitar</span>
           </div>
-          <div className="about-page-main_hobby" />
-          <div className="about-page-main_hobby" />
-          <div className="about-page-main_hobby" />
+          <div className="about-page-main_hobby-container">
+            <div className="about-page-main_hobby about-page-main_hobby-running">
+              <RunningPhoto />
+            </div>
+            <span className="about-page-main_hobby-text">Running</span>
+          </div>
+          <div className="about-page-main_hobby-container">
+            <div className="about-page-main_hobby about-page-main_hobby-running">
+              <RunningPhoto />
+            </div>
+            <span className="about-page-main_hobby-text">Snowboarding</span>
+          </div>
+          <div className="about-page-main_hobby-container">
+            <div className="about-page-main_hobby about-page-main_hobby-running">
+              <RunningPhoto />
+            </div>
+            <span className="about-page-main_hobby-text"></span>
+          </div>
         </div>
       </div>
     ) : null
