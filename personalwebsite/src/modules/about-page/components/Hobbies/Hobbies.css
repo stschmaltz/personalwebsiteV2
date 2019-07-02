@@ -19,11 +19,35 @@
     flex-direction: column;
   }
 }
-.about-page-main_hobby-container {
+.hobby-description {
+  visibility: hidden;
+  border: 1px solid var(--primary-color-500);
+  z-index: 9000;
+  position: absolute;
+  bottom: 0px;
+  left: -130px;
+  background-color: #fff;
+  width: 20rem;
+  height: 20rem;
+  padding: 0 1rem;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
+.about-page-main_hobby-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.about-page-main_hobby:hover .hobby-description {
+  visibility: visible;
+}
+
+.hobby-text {
+  font-size: 16px;
+}
+
 .about-page-main_hobby {
   border: 1px solid var(--primary-color-900);
   overflow: hidden;
