@@ -2,8 +2,9 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  height: 2.5rem;
+  height: 2.7rem;
   padding: 0 0.5rem;
+  padding-top: 0.2rem;
   background-color: var(--yellow-200);
   border: 1px solid var(--yellow-900);
   border-radius: 15px;
@@ -24,7 +25,7 @@
 
 .about-page-main_timeline-replicon-dev {
   left: 25%;
-  bottom: -3rem;
+  bottom: -3.3rem;
 }
 
 .about-page-main_timeline-osprey {
