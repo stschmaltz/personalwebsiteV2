@@ -11,7 +11,13 @@ const DownloadButton = () => (
       Below is my resume. It details my work experience and my familiarity with
       different technologies and programming langauges.
     </span>
-    <button className="resume-page_download-button">Click to Download</button>
+    <a
+      className="resume-page_download-button"
+      href="../../images/Shane-Schmaltz-Resume.pdf"
+      download="Shane-Schmaltz-Resume.pdf"
+    >
+      Download
+    </a>
   </div>
 )
 

@@ -3,6 +3,10 @@ import PropTypes from 'prop-types'
 import './ContactPageForm.css'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import ContactPageFormInput from './ContactPageFormInput'
+import * as emailjs from 'emailjs-com'
+
+const service_id = 'default_service'
+const template_id = 'template_FAqr1HtI'
 
 const ContactPageForm = props => {
   return (
@@ -22,7 +26,21 @@ const ContactPageForm = props => {
         }}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
-            alert(JSON.stringify(values, null, 2))
+            const template_params = {
+              reply_to: '',
+              from_name: values.name,
+              from_email: values.email,
+              message_html: values.message,
+            }
+            console.log(JSON.stringify(values))
+            alert(JSON.stringify(values))
+            emailjs.send(
+              service_id,
+              template_id,
+              template_params,
+              process.env.USER_ID,
+            )
+
             setSubmitting(false)
           }, 400)
         }}

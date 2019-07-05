@@ -2,16 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './Hobbies.css'
 
-const Hobby = ({ PhotoComponent, title, identifierText }) => {
+const Hobby = ({ PhotoComponent, title, identifierText, description }) => {
   const hobbyClass = `about-page-main_hobby about-page-main_hobby-${identifierText}`
   return (
     <div className="about-page-main_hobby-container">
       <div className={hobbyClass}>
         <div className="hobby-description">
-          <p className="hobby-text">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostru.
+          <p className="hobby-description-text">
+            {description}
           </p>
         </div>
         <PhotoComponent />

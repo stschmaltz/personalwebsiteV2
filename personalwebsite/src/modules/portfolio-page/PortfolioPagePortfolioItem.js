@@ -1,10 +1,12 @@
-import React from 'react'
+// import React from 'react'
 import './PortfolioPagePortfolioItem.css'
 import PropTypes from 'prop-types'
 import ReactCardFlipper from 'react-card-flipper'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 import { Link } from 'gatsby'
+import React, { useState } from 'react'
+import { useSpring, animated as a } from 'react-spring'
 
 const PortfolioPagePortfolioItem = ({
   children,
