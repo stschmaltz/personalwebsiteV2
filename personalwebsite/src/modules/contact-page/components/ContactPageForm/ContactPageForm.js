@@ -4,15 +4,16 @@ import './ContactPageForm.css'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import ContactPageFormInput from './ContactPageFormInput'
 import * as emailjs from 'emailjs-com'
+import { withToastManager } from 'react-toast-notifications'
 
 const service_id = 'default_service'
 const template_id = 'template_FAqr1HtI'
 
-const ContactPageForm = props => {
+const ContactPageForm = ({ toastManager, context }) => {
   return (
     <>
       <Formik
-        initialValues={{ email: '', password: '' }}
+        initialValues={{ email: '' }}
         validate={values => {
           let errors = {}
           if (!values.email) {
@@ -27,19 +28,21 @@ const ContactPageForm = props => {
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
             const template_params = {
-              reply_to: '',
               from_name: values.name,
               from_email: values.email,
               message_html: values.message,
             }
-            console.log(JSON.stringify(values))
-            alert(JSON.stringify(values))
             emailjs.send(
               service_id,
               template_id,
               template_params,
               process.env.USER_ID,
             )
+            toastManager.add('Email sent successfully', {
+              appearance: 'success',
+              autoDismiss: true,
+              pauseOnHover: true,
+            })
 
             setSubmitting(false)
           }, 400)
@@ -94,4 +97,4 @@ const ContactPageForm = props => {
 
 ContactPageForm.propTypes = {}
 
-export default ContactPageForm
+export default withToastManager(ContactPageForm)

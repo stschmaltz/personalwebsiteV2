@@ -30,6 +30,7 @@
     "react-pdf": "^4.0.5",
     "react-sizeme": "^2.5.2",
     "react-spring": "^8.0.27",
+    "react-toast-notifications": "^1.4.0",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18",
     "typography-theme-funston": "^0.16.18",

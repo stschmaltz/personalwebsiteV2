@@ -36,16 +36,16 @@ const Hobbies = props => {
           PhotoComponent={SnowboardPhoto}
           title="Snowboarding"
           description={`Snowboarding is one of my newest hobbies.. Last winter was the first 
-          year I decided to actually go out and buy my own board and make a real effort to 
+          year I decided to actually go out and buy my own board and try to 
           learn the sport. Once I started to get the hang of things it quickly became one of
-          my favourite activities. This year I almost can't wait to get back in the mountains.`}
+          my favourite activities. This year I almost can't wait for winter just to get back in the mountains.`}
         />
         <Hobby
           identifierText="games"
           PhotoComponent={VideoGamePhoto}
           title="Video Games"
-          description={`Video games are a life long interest of mine and like many others in 
-          this industry a big reason why I even got into programming. I don't manage to get 
+          description={`Video games are a life long interest of mine. Additionally, like many others in 
+          this industry, are a big reason why I even got into programming. I don't manage to get 
           in nearly as many hours as my glory days but I still love gaming as a way to unwind 
           at the end of a day.`}
         />

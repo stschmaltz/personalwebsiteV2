@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import Nav from './Nav/Nav'
-import Header from './header'
 import './layout.css'
 import { Location } from '@reach/router'
+import { ToastProvider } from 'react-toast-notifications'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -22,10 +22,12 @@ const Layout = ({ children }) => (
         <>
           <Location>
             {locationProps => (
-              <div className="main-layout">
-                <Nav {...locationProps} />
-                {children}
-              </div>
+              <ToastProvider>
+                <div className="main-layout">
+                  <Nav {...locationProps} />
+                  {children}
+                </div>
+              </ToastProvider>
             )}
           </Location>
         </>

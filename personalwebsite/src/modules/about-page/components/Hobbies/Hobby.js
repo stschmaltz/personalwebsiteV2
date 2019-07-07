@@ -8,9 +8,7 @@ const Hobby = ({ PhotoComponent, title, identifierText, description }) => {
     <div className="about-page-main_hobby-container">
       <div className={hobbyClass}>
         <div className="hobby-description">
-          <p className="hobby-description-text">
-            {description}
-          </p>
+          <p className="hobby-description-text">{description}</p>
         </div>
         <PhotoComponent />
       </div>

@@ -67,16 +67,16 @@ rules:
     - patterns:
         - '**/../core/**'
   no-duplicate-imports: 2
-  no-unused-vars: 2
+  no-unused-vars: 1
   no-use-before-define: 0
   object-shorthand: 2
   function-paren-newline: 0
   class-methods-use-this: 0
   newline-per-chained-call: 0
   prefer-template: 2
-  prefer-destructuring: 2
-  prefer-spread: 2
-  prefer-arrow-callback: 2
+  prefer-destructuring: 0
+  prefer-spread: 0
+  prefer-arrow-callback: 0
 
   padding-line-between-statements:
     - error
@@ -116,8 +116,8 @@ rules:
   import/newline-after-import: 2
   import/namespace: 2
   import/no-absolute-path: 2
-  import/no-duplicates: 2
-  import/no-unresolved: 2
+  import/no-duplicates: 0
+  import/no-unresolved: 0
   import/no-useless-path-segments: 2
   import/no-self-import: 2
   import/no-cycle: 2
