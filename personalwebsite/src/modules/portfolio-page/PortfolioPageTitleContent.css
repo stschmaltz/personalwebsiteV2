@@ -6,7 +6,7 @@
   text-align: center;
   align-self: flex-end;
   border: 0;
-  color: #3540c4;
+  color: var(--purple-500);
   background-color: transparent;
   cursor: pointer;
 }

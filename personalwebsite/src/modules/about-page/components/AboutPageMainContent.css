@@ -36,4 +36,5 @@
 
 .about-page-main_contact-me-btn {
   font-weight: bold;
+  color: var(--purple-500);
 }
