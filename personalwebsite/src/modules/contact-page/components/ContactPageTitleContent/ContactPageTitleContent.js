@@ -10,19 +10,36 @@ import {
 } from 'react-icons/fa'
 import './ContactPageTitleContent.css'
 
+const usingTwitter = false
+
 const ContentPageTitleContent = props => {
+  const twitter = usingTwitter ? (
+    <SocialLink Icon={FaTwitterSquare} linkUrl="" linkText="@shane_schmaltz" />
+  ) : null
   return (
     <div className="page-title__content">
       <p className="page-title__paragraph">
         Please feel welcome to contact me via the form or use any of the links
-        below
+        below.
       </p>
       <div>
         <ul>
-          <SocialLink Icon={FaEnvelopeSquare} link="stschmaltz@gmail.com" />
-          <SocialLink Icon={FaLinkedin} link="linkedin.com/in/stschmaltz/" />
-          <SocialLink Icon={FaGithubSquare} link="github.com/stschmaltz/" />
-          <SocialLink Icon={FaTwitterSquare} link="@shane_schmaltz" />
+          <SocialLink
+            Icon={FaEnvelopeSquare}
+            linkUrl="mailto:stschmaltz@gmail.com"
+            linkText="stschmaltz@gmail.com"
+          />
+          <SocialLink
+            Icon={FaLinkedin}
+            linkUrl="https://linkedin.com/in/stschmaltz/"
+            linkText="linkedin.com/in/stschmaltz/"
+          />
+          <SocialLink
+            Icon={FaGithubSquare}
+            linkUrl="https://github.com/stschmaltz/"
+            linkText="github.com/stschmaltz/"
+          />
+          {twitter}
         </ul>
       </div>
     </div>

@@ -7,3 +7,6 @@
     margin: 0.5rem auto;
   }
 }
+.social-link_actual-link {
+  color: var(--primary-text-color);
+}

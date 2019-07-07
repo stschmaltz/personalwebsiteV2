@@ -2,14 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './SocialLink.css'
 
-const SocialLink = ({ Icon, link }) => {
+const SocialLink = ({ Icon, linkText, linkUrl }) => {
   return (
-    <div className="social-link__container">
-      <div className="social-link__icon">
-        <Icon className="social-link__icon" />
+    <a className="social-link_actual-link" href={linkUrl}>
+      <div className="social-link__container">
+        <div className="social-link__icon">
+          <Icon className="social-link__icon" />
+        </div>
+        <span className="social-link__text">{linkText}</span>
       </div>
-      <span className="social-link__text">{link}</span>
-    </div>
+    </a>
   )
 }
 
