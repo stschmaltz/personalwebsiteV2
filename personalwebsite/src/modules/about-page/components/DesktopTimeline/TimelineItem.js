@@ -23,10 +23,7 @@ const TimelineItem = ({
         <span className="about-page-main_timeline-item-date">
           {secondaryText}
         </span>
-        <InfoIcon
-          style={{ fontSize: 14 }}
-          className="about-page-main_timeline-item-info-icon"
-        />
+        <InfoIcon className="about-page-main_timeline-item-info-icon" />
       </div>
       <div className="about-page-main_timeline-item-description-container">
         <h1 className="about-page-main_timeline-item-description-header">

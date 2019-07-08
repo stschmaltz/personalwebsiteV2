@@ -27,13 +27,20 @@
   .about-page-main_container {
     padding-left: 0;
     width: 100%;
-    min-width: auto;
+    min-width: 100%;
+    align-items: center;
   }
 }
 .about-page-main_paragraph {
   min-width: 400px;
 }
-
+@media (max-width: 600px) {
+  .about-page-main_paragraph {
+    /* text-align: justify; */
+    min-width: 90%;
+    width: 90%;
+  }
+}
 .about-page-main_contact-me-btn {
   font-weight: bold;
   color: var(--purple-500);
