@@ -4,6 +4,7 @@ import withParticleBackground from '../particle-background/withParticleBackgroun
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import './LandingPage.css'
+import { motion } from 'framer-motion'
 
 const seoKeyWords = [
   `gatsby`,
@@ -26,11 +27,29 @@ const LandingPage = props => {
     <Layout>
       <SEO title="Home" keywords={seoKeyWords} />
       <div className="landing-page_container">
-        <h1 className="landing-page_full-name">Shane Schmaltz</h1>
-        <h2 className="landing-page_title">Software Developer</h2>
-        <p className="landing-page_tagline">
-          Creating websites with a lasting impression
-        </p>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 5 }}
+        >
+          <h1 className="landing-page_full-name">Shane Schmaltz</h1>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 5 }}
+        >
+          <h2 className="landing-page_title">Software Developer</h2>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2, duration: 5 }}
+        >
+          <p className="landing-page_tagline">
+            Creating websites with a lasting impression
+          </p>
+        </motion.div>
       </div>
     </Layout>
   )
