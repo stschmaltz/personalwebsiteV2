@@ -16,6 +16,7 @@ const DesktopTimeline = ({ timelineItems }) => {
       description,
     }) => (
       <TimelineItem
+        key={eventName}
         secondaryText={secondaryText}
         titleText={titleText}
         eventName={eventName}

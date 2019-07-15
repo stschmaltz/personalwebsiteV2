@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './TimelineItem.css'
 import InfoIcon from '@material-ui/icons/InfoOutlined'
+import { motion } from 'framer-motion'
 
 const TimelineItem = ({
   titleText,

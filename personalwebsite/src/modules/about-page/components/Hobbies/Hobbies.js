@@ -17,35 +17,28 @@ const Hobbies = props => {
           PhotoComponent={BassPhoto}
           title="Bass Guitar"
           description={`I started playing guitar in January of 2017 after being inspired by 
-          some coworkers that had a garage band. I practiced almost every day and met with 
-          those coworkers every other week to play music. After a year I bought a bass and 
-          immediately fell in love and continue to play today.`}
+          some coworkers that had a garage band. A year later I started playing bass for those
+          guys and still do today.`}
         />
         <Hobby
           identifierText="running"
           PhotoComponent={RunningPhoto}
           title="Running"
-          description={`When I graduated university in 2015, I was a rather fairly inactive 
-          individual. I decided when I started working that I wanted to change that and stop 
-          limiting myself. I started weight lifting and learned how to cook healthier foods. 
-          Nowadays I don't make it to the weights as much but I have started getting into
-          running and many other fun sports.`}
+          description={`I found a love for fitness later in my life. After graduating university I bought a gym membership and started lifting weights. After a while I started branching out and try a variety of new sports. Running is my main activity these days but I try to get a variety .`}
         />
         <Hobby
           identifierText="snowboarding"
           PhotoComponent={SnowboardPhoto}
           title="Snowboarding"
           description={`Snowboarding is one of my newest hobbies.. Last winter was the first 
-          year I decided to actually go out and buy my own board and try to 
-          learn the sport. Once I started to get the hang of things it quickly became one of
-          my favourite activities. This year I almost can't wait for winter just to get back in the mountains.`}
+          year I decided to really give it a go and it immediately became one of my favourite
+          activities of all time.`}
         />
         <Hobby
           identifierText="games"
           PhotoComponent={VideoGamePhoto}
           title="Video Games"
-          description={`Video games are a life long interest of mine. Additionally, like many others in 
-          this industry, are a big reason why I even got into programming. I don't manage to get 
+          description={`Video games are a life long interest of mine. They are even a big reason as to how I even got into programming. I don't manage to get 
           in nearly as many hours as my glory days but I still love gaming as a way to unwind 
           at the end of a day.`}
         />

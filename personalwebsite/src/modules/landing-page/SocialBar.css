@@ -1,0 +1,7 @@
+.social-bar_content-container {
+  color: var(--black-400);
+}
+.social-bar_links-container {
+  display: flex;
+  color: var(--black-400);
+}

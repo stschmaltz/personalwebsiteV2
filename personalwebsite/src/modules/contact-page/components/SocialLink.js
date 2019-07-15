@@ -1,17 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './SocialLink.css'
+import { motion } from 'framer-motion'
 
 const SocialLink = ({ Icon, linkText, linkUrl }) => {
   return (
-    <a className="social-link_actual-link" href={linkUrl}>
-      <div className="social-link__container">
-        <div className="social-link__icon">
-          <Icon className="social-link__icon" />
+    <motion.div
+      whileHover={{
+        scale: 1.1,
+        transition: { ease: 'easeOut', duration: 0.2 },
+      }}
+      whileTap={{
+        scale: 0.9,
+      }}
+    >
+      <a className="social-link_actual-link" href={linkUrl}>
+        <div className="social-link__container">
+          <div className="social-link__icon">
+            <Icon className="social-link__icon" />
+          </div>
+          <span className="social-link__text">{linkText}</span>
         </div>
-        <span className="social-link__text">{linkText}</span>
-      </div>
-    </a>
+      </a>
+    </motion.div>
   )
 }
 

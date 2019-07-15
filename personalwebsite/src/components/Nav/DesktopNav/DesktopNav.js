@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import './DesktopNav.css'
 import DesktopNavItem from './DesktopNavItem'
+import { motion } from 'framer-motion'
 
 const DesktopNav = ({ location }) => {
   const isHome = location.pathname === '/' ? 'isHome   ' : ''
@@ -22,13 +23,22 @@ const DesktopNav = ({ location }) => {
             title="Resume"
             path="/resume/"
           />
-          <div className="desktop-nav-bar__logo">
+          <motion.div
+            className="desktop-nav-bar__logo"
+            initial={{
+              rotate: 45,
+            }}
+            whileHover={{
+              rotate: 225,
+              transition: { ease: 'easeOut', duration: 0.2 },
+            }}
+          >
             <Link to="/">
               <div className="desktop-nav-bar__logo-inner">
                 <span className="desktop-nav-bar__logo-text">S</span>
               </div>
             </Link>
-          </div>
+          </motion.div>
           <DesktopNavItem
             isSelected={currentPath === '/portfolio/'}
             title="Portfolio"

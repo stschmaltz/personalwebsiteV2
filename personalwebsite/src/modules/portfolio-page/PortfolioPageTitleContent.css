@@ -10,3 +10,7 @@
   background-color: transparent;
   cursor: pointer;
 }
+
+.portfolio-page-content_github-button-container {
+  display: inline-block;
+}
