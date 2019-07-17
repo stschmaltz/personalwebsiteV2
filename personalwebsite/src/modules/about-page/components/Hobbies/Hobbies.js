@@ -24,14 +24,17 @@ const Hobbies = props => {
           identifierText="running"
           PhotoComponent={RunningPhoto}
           title="Running"
-          description={`I found a love for fitness later in my life. After graduating university I bought a gym membership and started lifting weights. After a while I started branching out and try a variety of new sports. Running is my main activity these days but I try to get a variety .`}
+          description={`I found a love for fitness later in my life. After graduating university 
+          I bought a gym membership and started lifting weights. After a while I started branching 
+          out and enjoy a variety of sports today. Running is my main activity nowadays but I make sure to 
+          find new things to try regularly.`}
         />
         <Hobby
           identifierText="snowboarding"
           PhotoComponent={SnowboardPhoto}
           title="Snowboarding"
-          description={`Snowboarding is one of my newest hobbies.. Last winter was the first 
-          year I decided to really give it a go and it immediately became one of my favourite
+          description={`Snowboarding is one of my newest hobbies. Last winter was the first 
+          year I decided to make an effort to learn how to snowboard and it immediately became one of my favourite
           activities of all time.`}
         />
         <Hobby

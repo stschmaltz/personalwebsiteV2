@@ -30,7 +30,7 @@ const DesktopNav = ({ location }) => {
             }}
             whileHover={{
               rotate: 225,
-              transition: { ease: 'easeOut', duration: 0.2 },
+              transition: { ease: 'easeIn', duration: 0.3 },
             }}
           >
             <Link to="/">

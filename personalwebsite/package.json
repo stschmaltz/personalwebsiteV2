@@ -1,7 +1,7 @@
 {
   "name": "Personal-Website",
   "private": true,
-  "description": "A site for me to tell you a bit about myself and offer my services as a web developer",
+  "description": "A site for me to tell you a bit about myself and offer my services as a full stack web developer",
   "version": "0.1.0",
   "author": "Shane Schmaltz @stschmaltz",
   "dependencies": {
@@ -25,6 +25,7 @@
     "react": "^16.8.6",
     "react-card-flipper": "^1.0.1",
     "react-dom": "^16.8.6",
+    "react-ga": "^2.6.0",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.4.0",
     "react-particles-js": "^2.4.2",
@@ -33,6 +34,7 @@
     "react-spring": "^8.0.27",
     "react-toast-notifications": "^1.4.0",
     "react-typography": "^0.16.18",
+    "recompose": "^0.30.0",
     "typography": "^0.16.18",
     "typography-theme-funston": "^0.16.18",
     "typography-theme-irving": "0.16.18",

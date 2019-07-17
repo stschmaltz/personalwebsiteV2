@@ -5,6 +5,7 @@ import Nav from './Nav/Nav'
 import './layout.css'
 import { Location } from '@reach/router'
 import { ToastProvider } from 'react-toast-notifications'
+import withPageView from '../lib/withPageView/withPageView'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -40,4 +41,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default withPageView(Layout)
