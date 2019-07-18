@@ -1,6 +1,7 @@
 :root {
   --primary-text: rgba(0, 0, 0, 0.87);
   --secondary-text-alt: rgba(0, 0, 0, 0.57);
+  font-display: auto;
 
   --secondary-text: #aeb9c5;
   --tertiary-text: #d7dce2;
@@ -169,7 +170,6 @@ html {
   -webkit-text-size-adjust: 100%;
   background: url(../images/small_concrete-background.jpg) no-repeat center
     center fixed;
-  /* background-color: #eff2f4; */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

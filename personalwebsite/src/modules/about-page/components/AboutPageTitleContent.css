@@ -11,8 +11,3 @@
 
   box-shadow: var(--elevation-shadow-1);
 }
-@media (max-width: 600px) {
-  .about-me-page-title_photo-card {
-    /* width: 50%; */
-  }
-}

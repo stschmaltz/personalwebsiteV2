@@ -2,7 +2,6 @@ import ReactGA from 'react-ga'
 
 const isProduction = process.env.NODE_ENV === 'production'
 const empty = () => null
-
 function initializeGa() {
   try {
     ReactGA.initialize('UA-132226898-1', { debug: !isProduction })

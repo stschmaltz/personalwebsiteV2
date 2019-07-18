@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import './MobileNav.css'
-import { Link } from 'gatsby'
 import MobileNavItem from './MobileNavItem'
 import {
   FaQuestion,

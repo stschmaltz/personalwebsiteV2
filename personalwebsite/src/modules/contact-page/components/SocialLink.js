@@ -14,12 +14,16 @@ const SocialLink = ({ Icon, linkText, linkUrl }) => {
         scale: 0.9,
       }}
     >
-      <a className="social-link_actual-link" href={linkUrl}>
+      <a
+        aria-label={linkText}
+        className="social-link_actual-link"
+        href={linkUrl}
+      >
         <div className="social-link__container">
           <div className="social-link__icon">
             <Icon className="social-link__icon" />
           </div>
-          <span className="social-link__text">{linkText}</span>
+          {linkText && <span className="social-link__text">{linkText}</span>}
         </div>
       </a>
     </motion.div>
