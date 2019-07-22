@@ -2,8 +2,9 @@ const config = require('./src/meta/config')
 
 module.exports = {
   siteMetadata: {
-    title: `Shane Schmaltz's Website`,
-    description: `A site for me to tell you a bit about myself and offer my services as a web developer`,
+    title: config.siteTitle,
+    description: config.siteDescription,
+    siteUrl: config.siteUrl,
     author: `@stschmaltz`,
   },
   plugins: [
@@ -15,12 +16,12 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: process.env.GOOGLE_ANALYTICS_ID,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-sitemap`,
     },
