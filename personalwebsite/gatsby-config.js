@@ -1,3 +1,5 @@
+const config = require('./src/meta/config')
+
 module.exports = {
   siteMetadata: {
     title: `Shane Schmaltz's Website`,
@@ -14,6 +16,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+    },
+    {
       resolve: `gatsby-plugin-sharp`,
       options: {
         useMozJpeg: false,
@@ -25,6 +36,19 @@ module.exports = {
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
+      options: {
+        options: {
+          name: config.manifestName,
+          short_name: config.manifestShortName,
+          start_url: config.manifestStartUrl,
+          background_color: config.manifestBackgroundColor,
+          theme_color: config.manifestThemeColor,
+          display: config.manifestDisplay,
+          display: `minimal-ui`,
+          icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        },
+      },
+
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
@@ -42,8 +66,6 @@ module.exports = {
       },
     },
 
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
   ],
 }

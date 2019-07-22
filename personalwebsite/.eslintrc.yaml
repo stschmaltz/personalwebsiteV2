@@ -1,9 +1,10 @@
 parser: babel-eslint
 
 extends:
-  - airbnb
-  - plugin:prettier/recommended
-  - prettier/react
+  - google,
+  - prettier,
+  - prettier/react,
+  - plugin:react/recommended
 
 env:
   browser: true
