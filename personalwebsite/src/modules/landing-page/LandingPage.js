@@ -3,30 +3,12 @@ import withParticleBackground from '../particle-background/withParticleBackgroun
 import FullName from './FullName'
 import SocialBar from './SocialBar'
 import Layout from '../../components/layout'
-import SEO from '../../components/seo'
 import './LandingPage.css'
 import { motion } from 'framer-motion'
-
-const seoKeyWords = [
-  `gatsby`,
-  `application`,
-  `react`,
-  `Shane Schmaltz`,
-  `Shane`,
-  `Schmaltz`,
-  `Calgary`,
-  `Software Developer`,
-  `Software`,
-  `Developer`,
-  `Website`,
-  ``,
-  `Web Developer`,
-]
 
 const LandingPage = props => {
   return (
     <Layout>
-      <SEO title="Home" keywords={seoKeyWords} />
       <div className="landing-page_container">
         <FullName />
         <motion.div

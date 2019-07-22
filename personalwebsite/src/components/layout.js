@@ -6,7 +6,23 @@ import './layout.css'
 import { Location } from '@reach/router'
 import { ToastProvider } from 'react-toast-notifications'
 import withPageView from '../lib/withPageView/withPageView'
+import SEO from '../components/seo'
 
+const seoKeyWords = [
+  `gatsby`,
+  `application`,
+  `react`,
+  `Shane Schmaltz`,
+  `Shane`,
+  `Schmaltz`,
+  `Calgary`,
+  `Software Developer`,
+  `Software`,
+  `Developer`,
+  `Website`,
+  ``,
+  `Web Developer`,
+]
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -24,6 +40,8 @@ const Layout = ({ children }) => (
           <Location>
             {locationProps => (
               <ToastProvider>
+                <SEO keywords={seoKeyWords} />
+
                 <div className="main-layout">
                   <Nav {...locationProps} />
                   {children}
