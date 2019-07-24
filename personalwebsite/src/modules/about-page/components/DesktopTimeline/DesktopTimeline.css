@@ -1,5 +1,5 @@
 .about-page-main_timeline-container {
-  margin: 3rem 0;
+  margin: 3rem auto;
   position: relative;
   border: 1px solid var(--purple-100);
   min-width: 550px;

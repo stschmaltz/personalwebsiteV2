@@ -4,17 +4,11 @@ import Helmet from 'react-helmet'
 import config from '../../meta/config'
 
 const Seo = props => {
-  const { data } = props
-  const postTitle = ((data || {}).frontmatter || {}).title
-  const postDescription = ((data || {}).frontmatter || {}).description
-  const postCover = ((data || {}).frontmatter || {}).cover
-  const postSlug = ((data || {}).fields || {}).slug
-
-  const title = postTitle
-    ? `${postTitle} - ${config.shortSiteTitle}`
-    : config.siteTitle
-  const description = postDescription ? postDescription : config.siteDescription
-  const url = config.siteUrl + config.pathPrefix + postSlug
+  const { data, keywords, location } = props
+  // debugger
+  const title = config.siteTitle + location.location.pathname
+  const description = config.siteDescription
+  const url = config.siteUrl + location.location.pathname
 
   return (
     <Helmet
@@ -22,10 +16,19 @@ const Seo = props => {
         lang: config.siteLanguage,
         prefix: 'og: http://ogp.me/ns#',
       }}
+      meta={
+        keywords.length > 0
+          ? {
+              name: `keywords`,
+              content: keywords.join(`, `),
+            }
+          : [].concat(meta)
+      }
     >
       {/* General tags */}
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="language" content="English" />
       {/* OpenGraph tags */}
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />

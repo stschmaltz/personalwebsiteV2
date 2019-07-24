@@ -7,6 +7,7 @@ import { Location } from '@reach/router'
 import { ToastProvider } from 'react-toast-notifications'
 import withPageView from '../lib/withPageView/withPageView'
 import SEO from '../components/seo'
+import { motion } from 'framer-motion'
 
 const seoKeyWords = [
   `gatsby`,
@@ -40,11 +41,18 @@ const Layout = ({ children }) => (
           <Location>
             {locationProps => (
               <ToastProvider>
-                <SEO keywords={seoKeyWords} />
+                <SEO location={locationProps} keywords={seoKeyWords} />
 
                 <div className="main-layout">
                   <Nav {...locationProps} />
-                  {children}
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1.5 }}
+                    style={{ width: '100%' }}
+                  >
+                    {children}
+                  </motion.div>
                 </div>
               </ToastProvider>
             )}

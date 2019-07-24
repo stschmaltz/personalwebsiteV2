@@ -2,9 +2,8 @@ module.exports = {
   siteTitle: 'Shane Schmaltz Personal Site', // <title>
   shortSiteTitle: 'ShaneSchmaltz.com', // <title> ending for posts and pages
   siteDescription:
-    "Hey I'm Shane and I make websites and help with unternet marketing & branding.",
+    "Hey I'm Shane Schmaltz, full stack developer with a special interest in web development and internet marketing / branding. Software developer in Calgary Alberta Canada.",
   siteUrl: 'https://shaneschmaltz.com',
-  // pathPrefix: "",
   siteLanguage: 'en',
 
   /* author */
