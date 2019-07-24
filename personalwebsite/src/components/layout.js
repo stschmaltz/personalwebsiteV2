@@ -48,7 +48,7 @@ const Layout = ({ children }) => (
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    transition={{ duration: 1.5 }}
+                    transition={{ duration: 1 }}
                     style={{ width: '100%' }}
                   >
                     {children}
