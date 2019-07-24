@@ -11,7 +11,7 @@ module.exports = {
   authorTwitterAccount: 'shane_schmaltz',
 
   /* manifest.json */
-  manifestName: 'ShaneSchmaltz - Software Developer',
+  manifestName: 'Shane Schmaltz - Software Developer',
   manifestStartUrl: '/index.html',
   manifestBackgroundColor: '#202121',
   manifestThemeColor: '#202121',
