@@ -22,9 +22,7 @@ module.exports = {
     //     trackingId: process.env.GOOGLE_ANALYTICS_ID,
     //   },
     // },
-    {
-      resolve: `gatsby-plugin-sitemap`,
-    },
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
