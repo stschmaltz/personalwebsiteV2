@@ -20,7 +20,7 @@ const PortfolioPageMainContent = props => {
       <div className="portfolio-page-main-content__portfolio-item">
         <PortfolioPagePortfolioItem
           siteName="Personal Site V1"
-          siteUrl="https://shaneschmaltz.com"
+          siteUrl="https://personal-site-eqp8ijihn.now.sh/"
           description="The first ReactJS site I made and also the original version of my personal website."
           children={<PersonalSiteV1Thumbnail />}
         />
